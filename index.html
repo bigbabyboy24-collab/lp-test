@@ -154,9 +154,9 @@ body {
   background: var(--paper);
   color: var(--ink-2);
   font-family: var(--gothic);
-  font-size: 15px;
-  line-height: 2.15;           /* ゆったりと読ませる */
-  letter-spacing: .06em;
+  font-size: 16px;
+  line-height: 1.95;
+  letter-spacing: .035em;
   -webkit-font-smoothing: antialiased;
   overflow-wrap: anywhere;
 }
@@ -194,42 +194,49 @@ button { font: inherit; }
 
 /* 小さな加飾（細い縦罫）。和の意匠に寄せず、細線のみに留める */
 .ornament {
-  display: block; width: 1px; height: 44px;
-  margin: 0 auto 2.5rem;
+  display: block; width: 1px; height: 36px;
+  margin: 0 auto 1.75rem;
   background: linear-gradient(180deg, transparent, var(--bronze) 45%, transparent);
 }
 
 /* ---------- Typography ---------- */
 .label {
-  display: block; margin-bottom: 1.5rem;
+  display: block; margin-bottom: 1.1rem;
   font-family: var(--latin);
-  font-size: .74rem; font-weight: 500;
-  letter-spacing: .42em; text-transform: uppercase;
+  font-size: .76rem; font-weight: 500;
+  letter-spacing: .36em; text-transform: uppercase;
   color: var(--bronze);
 }
 .title {
   font-family: var(--mincho); font-weight: 500;
-  font-size: clamp(1.45rem, 5.6vw, 2.35rem);
-  line-height: 1.85;                 /* 見出しも余白で呼吸させる */
-  letter-spacing: .12em;
+  font-size: clamp(1.5rem, 5.8vw, 2.4rem);
+  line-height: 1.65;
+  letter-spacing: .09em;
   color: var(--ink);
 }
-.title-lg { font-size: clamp(1.7rem, 7vw, 3rem); }
+.title-lg { font-size: clamp(1.75rem, 7vw, 3rem); }
 .lead {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   font-family: var(--mincho);
-  font-size: clamp(.95rem, 3.6vw, 1.06rem);
-  line-height: 2.4; letter-spacing: .1em;
+  font-size: clamp(1rem, 3.6vw, 1.1rem);
+  line-height: 2.1; letter-spacing: .07em;
   color: var(--ink-2);
 }
-.desc { margin-top: 1.75rem; color: var(--ink-2); font-size: .9rem; }
+.desc { margin-top: 1.25rem; color: var(--ink-2); font-size: .94rem; }
 
-/* セクション：間隔を大きく取り、細罫で静かに区切る */
-.section { padding: clamp(4.5rem, 15vw, 9rem) 0; }
+/* セクション：余白は保ちつつ、間延びしない間隔に */
+.section { padding: clamp(3.5rem, 9vw, 6rem) 0; }
 .section-tint { background: var(--paper-2); }
 .section + .section:not(.section-tint):not(.section-dark) { border-top: 1px solid var(--line-2); }
-.section-head { margin-bottom: clamp(2.5rem, 8vw, 4.5rem); }
+.section-head { margin-bottom: clamp(2rem, 5vw, 3rem); }
 .section-head-center { text-align: center; }
+
+/* 面を持ったカード。罫線一本で締め、影は使わない */
+.card {
+  padding: 1.75rem 1.5rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+}
 
 /* ---------- Buttons：角はほぼ直角、装飾は最小限 ---------- */
 .btn {
@@ -316,8 +323,8 @@ button { font: inherit; }
 /* =========================================================
    Hero：写真を大きく、文字は最小限。周囲に余白を確保する
    ========================================================= */
-.hero { padding: calc(var(--header-h) + clamp(3rem, 12vw, 6rem)) 0 clamp(3rem, 10vw, 5.5rem); }
-.hero-head { text-align: center; margin-bottom: clamp(2.5rem, 8vw, 4rem); }
+.hero { padding: calc(var(--header-h) + clamp(2rem, 7vw, 3.5rem)) 0 clamp(2.5rem, 7vw, 4rem); }
+.hero-head { text-align: center; margin-bottom: clamp(2rem, 5vw, 2.75rem); }
 .hero-en {
   display: block; margin-bottom: 1.75rem;
   font-family: var(--latin); font-size: clamp(.78rem, 3vw, .92rem);
@@ -344,10 +351,10 @@ button { font: inherit; }
 
 .hero-facts {
   display: grid; grid-template-columns: repeat(3, 1fr);
-  margin-top: clamp(2.5rem, 8vw, 4rem);
+  margin-top: clamp(2rem, 5vw, 2.75rem);
   border-top: 1px solid var(--line);
 }
-.hero-facts li { padding: 1.75rem .5rem; text-align: center; }
+.hero-facts li { padding: 1.35rem .5rem; text-align: center; }
 .hero-facts li + li { border-left: 1px solid var(--line); }
 .hero-facts strong {
   display: block; margin-bottom: .5rem;
@@ -367,11 +374,11 @@ button { font: inherit; }
    ========================================================= */
 .about-body p + p { margin-top: 1.75rem; }
 .about-body p { font-size: .9rem; }
-.about-figure { margin-top: 3rem; aspect-ratio: 3 / 2; overflow: hidden; background: var(--paper-2); }
+.about-figure { margin-top: 2rem; aspect-ratio: 3 / 2; overflow: hidden; background: var(--paper-2); }
 .about-figure img { width: 100%; height: 100%; object-fit: cover; }
 
-.points { display: grid; gap: 0; margin-top: clamp(3rem, 8vw, 4.5rem); border-top: 1px solid var(--line-2); }
-.point { padding: 2.25rem 0; border-bottom: 1px solid var(--line-2); }
+.points { display: grid; gap: 0; margin-top: clamp(2.25rem, 5vw, 3rem); border-top: 1px solid var(--line-2); }
+.point { padding: 1.75rem 0; border-bottom: 1px solid var(--line-2); }
 .point-num {
   display: block; margin-bottom: .9rem;
   font-family: var(--latin); font-size: .8rem; letter-spacing: .3em; color: var(--bronze);
@@ -389,9 +396,14 @@ button { font: inherit; }
 .band { overflow: hidden; aspect-ratio: 20 / 9; background: var(--paper-2); }
 .band img { width: 100%; height: 100%; object-fit: cover; }
 
-.beer-grid { display: grid; gap: 0; margin-top: clamp(3rem, 8vw, 4.5rem); border-top: 1px solid var(--line); }
-.beer-card { padding: 2.25rem 0; border-bottom: 1px solid var(--line); }
-.beer-rule { width: 40px; height: 2px; margin-bottom: 1.5rem; }
+/* ビールの写真：3点を横並びに */
+.beer-photos { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; margin-top: .5rem; }
+.beer-photos figure { overflow: hidden; aspect-ratio: 1 / 1; background: var(--paper-2); }
+.beer-photos img { width: 100%; height: 100%; object-fit: cover; }
+
+.beer-grid { display: grid; gap: .8rem; margin-top: clamp(2rem, 5vw, 3rem); }
+.beer-card { padding: 1.75rem 1.5rem; background: var(--white); border: 1px solid var(--line); }
+.beer-rule { width: 40px; height: 2px; margin-bottom: 1.15rem; }
 .beer-rule[data-tone="ipa"]   { background: #C08A2E; }
 .beer-rule[data-tone="pale"]  { background: #D9AE55; }
 .beer-rule[data-tone="stout"] { background: #4A362A; }
@@ -410,14 +422,28 @@ button { font: inherit; }
 /* =========================================================
    Food：整然と並ぶカード（写真＋短い説明＋控えめなCTA）
    ========================================================= */
-.food-grid { display: grid; gap: clamp(2.5rem, 8vw, 3.5rem); }
+.food-grid { display: grid; gap: 1rem; }
+.food-card { background: var(--white); border: 1px solid var(--line); }
 .food-card figure { overflow: hidden; aspect-ratio: 4 / 3; background: var(--paper-2); }
 .food-card figure img {
   width: 100%; height: 100%; object-fit: cover;
   transition: opacity .6s var(--ease);
 }
 .food-card:hover figure img { opacity: .88; }
-.food-body { padding-top: 1.75rem; }
+.food-body { padding: 1.5rem 1.4rem 1.75rem; }
+
+/* お料理の一例：写真を敷き詰める */
+.dish-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .5rem; }
+.dish-grid figure { overflow: hidden; aspect-ratio: 4 / 3; background: var(--paper-2); }
+.dish-grid img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: opacity .6s var(--ease);
+}
+.dish-grid figure:hover img { opacity: .88; }
+.dish-grid figcaption {
+  padding-top: .7rem;
+  font-size: .74rem; letter-spacing: .06em; color: var(--ink-3);
+}
 .food-cat {
   margin-bottom: .7rem;
   font-family: var(--latin); font-size: .7rem; letter-spacing: .28em;
@@ -435,10 +461,10 @@ button { font: inherit; }
    ========================================================= */
 .lunch-figure { overflow: hidden; aspect-ratio: 6 / 5; background: var(--paper-2); }
 .lunch-figure img { width: 100%; height: 100%; object-fit: cover; }
-.lunch-copy { padding-top: 2.5rem; }
+.lunch-copy { padding-top: 1.75rem; }
 .lunch-copy p { font-size: .9rem; }
 .lunch-time {
-  margin-top: 2rem; padding: 1.75rem 0;
+  margin-top: 1.5rem; padding: 1.35rem 0;
   border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
   font-size: .86rem; line-height: 2.4; letter-spacing: .08em; color: var(--ink);
 }
@@ -448,8 +474,12 @@ button { font: inherit; }
 /* =========================================================
    Scene
    ========================================================= */
-.scene-list { display: grid; gap: 0; border-top: 1px solid var(--line-2); }
-.scene-item { display: grid; gap: .6rem; padding: 2rem 0; border-bottom: 1px solid var(--line-2); }
+.scene-list { display: grid; gap: .8rem; }
+.scene-item {
+  display: grid; gap: .55rem;
+  padding: 1.75rem 1.5rem;
+  background: var(--white); border: 1px solid var(--line);
+}
 .scene-icon { width: 26px; height: 26px; color: var(--bronze); }
 .scene-item h3 {
   font-family: var(--mincho); font-size: 1rem; font-weight: 500;
@@ -460,7 +490,7 @@ button { font: inherit; }
 /* =========================================================
    Interior gallery
    ========================================================= */
-.gallery { display: grid; gap: clamp(1.5rem, 5vw, 2rem); }
+.gallery { display: grid; gap: 1rem; }
 .gallery figure { overflow: hidden; aspect-ratio: 9 / 7; background: var(--paper-2); }
 .gallery figure img { width: 100%; height: 100%; object-fit: cover; }
 .gallery figcaption {
@@ -486,7 +516,7 @@ button { font: inherit; }
 
 .reserve-grid { display: grid; gap: 0; border-top: 1px solid rgba(251,249,245,.2); }
 .reserve-card {
-  display: grid; gap: 1.15rem; padding: 2.5rem 0;
+  display: grid; gap: 1rem; padding: 2rem 0;
   border-bottom: 1px solid rgba(251,249,245,.2);
 }
 .reserve-card h3 {
@@ -505,7 +535,7 @@ button { font: inherit; }
    Info
    ========================================================= */
 .info-table { border-top: 1px solid var(--line); }
-.info-row { display: grid; gap: .4rem; padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
+.info-row { display: grid; gap: .3rem; padding: 1.15rem 0; border-bottom: 1px solid var(--line); }
 .info-row dt { font-size: .74rem; letter-spacing: .18em; color: var(--ink-3); }
 .info-row dd { font-size: .88rem; line-height: 2.1; color: var(--ink); }
 .info-row dd a {
@@ -600,12 +630,13 @@ button { font: inherit; }
   .hero-facts strong { font-size: 2.3rem; }
   .hero-facts span { font-size: .74rem; }
 
-  .points { grid-template-columns: repeat(3, 1fr); column-gap: 3rem; }
+  .points { grid-template-columns: repeat(3, 1fr); column-gap: 2.5rem; }
   .point { border-bottom: 0; padding-bottom: 0; }
 
-  .beer-grid { grid-template-columns: repeat(2, 1fr); column-gap: 3.5rem; }
-  .food-grid { grid-template-columns: repeat(2, 1fr); }
-  .scene-list { grid-template-columns: repeat(2, 1fr); column-gap: 3.5rem; }
+  .beer-grid  { grid-template-columns: repeat(2, 1fr); }
+  .food-grid  { grid-template-columns: repeat(2, 1fr); }
+  .dish-grid  { grid-template-columns: repeat(4, 1fr); }
+  .scene-list { grid-template-columns: repeat(2, 1fr); }
   .gallery { grid-template-columns: repeat(2, 1fr); }
   .reserve-grid { grid-template-columns: repeat(3, 1fr); column-gap: 3rem; }
   .reserve-card { border-bottom: 0; }
@@ -617,7 +648,7 @@ button { font: inherit; }
   .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
   .about-figure { margin-top: 0; aspect-ratio: 4 / 5; }
 
-  .info-row { grid-template-columns: 8.5rem 1fr; gap: 2rem; padding: 1.75rem 0; }
+  .info-row { grid-template-columns: 8.5rem 1fr; gap: 2rem; padding: 1.3rem 0; }
   .map-embed iframe { height: 340px; }
 
   .review-links { grid-template-columns: auto auto; gap: 2.5rem; justify-content: start; align-items: center; }
@@ -635,11 +666,9 @@ button { font: inherit; }
    ========================================================= */
 @media (min-width: 1280px) {
   .hero-figure { aspect-ratio: 16 / 9; }
-  .beer-grid   { grid-template-columns: repeat(4, 1fr); column-gap: 2.5rem; }
-  .beer-card   { border-bottom: 0; }
-  .food-grid   { grid-template-columns: repeat(3, 1fr); }
-  .scene-list  { grid-template-columns: repeat(4, 1fr); column-gap: 2.5rem; }
-  .scene-item  { border-bottom: 0; }
+  .beer-grid   { grid-template-columns: repeat(4, 1fr); }
+  .food-grid   { grid-template-columns: repeat(4, 1fr); }
+  .scene-list  { grid-template-columns: repeat(4, 1fr); }
   .gallery     { grid-template-columns: repeat(3, 1fr); }
   .gallery-wide { grid-column: span 2; }
   .gallery-wide figure { aspect-ratio: 18 / 7; }
@@ -782,6 +811,22 @@ button { font: inherit; }
              width="2000" height="760" loading="lazy" decoding="async">
       </figure>
 
+      <!-- ▼ 差し替え箇所：ビール写真 3点（900×900 / 1:1） -->
+      <div class="beer-photos">
+        <figure>
+          <img src="images/beer-1.jpg" alt="ジョッキに注がれた生ビール"
+               width="900" height="900" loading="lazy" decoding="async">
+        </figure>
+        <figure>
+          <img src="images/beer-2.jpg" alt="グラスとジョッキに注がれた黒ビール"
+               width="900" height="900" loading="lazy" decoding="async">
+        </figure>
+        <figure>
+          <img src="images/beer-3.jpg" alt="色合いの異なる二杯のクラフトビール"
+               width="900" height="900" loading="lazy" decoding="async">
+        </figure>
+      </div>
+
       <ul class="beer-grid">
         <li class="beer-card">
           <div class="beer-rule" data-tone="ipa" aria-hidden="true"></div>
@@ -874,6 +919,50 @@ button { font: inherit; }
       </div>
 
       <p class="note">※ 掲載のお品書きは一例です。内容・価格は変更になる場合がございます。</p>
+
+      <!-- ▼ 差し替え箇所：お料理の一例 8点（900×675 / 4:3）
+           要確認：キャプションは写真から見たままを記した説明文です。
+           お品書きの正式名称に合わせてご修正ください。 -->
+      <div class="section-head section-head-center" style="margin-top:clamp(3rem,7vw,4.5rem)">
+        <h3 class="title" style="font-size:clamp(1.15rem,4vw,1.5rem)">そのほかのお品書きより</h3>
+      </div>
+
+      <div class="dish-grid">
+        <figure>
+          <img src="images/dish-1.jpg" alt="トマトとバジルをのせた窯焼きのピッツァ" width="900" height="675" loading="lazy" decoding="async">
+          <figcaption>トマトとバジルのピッツァ</figcaption>
+        </figure>
+        <figure>
+          <img src="images/dish-2.jpg" alt="サラミをのせた窯焼きのピッツァ" width="900" height="675" loading="lazy" decoding="async">
+          <figcaption>サラミのピッツァ</figcaption>
+        </figure>
+        <figure>
+          <img src="images/dish-3.jpg" alt="チーズとくるみをのせた白いピッツァ" width="900" height="675" loading="lazy" decoding="async">
+          <figcaption>チーズとくるみのピッツァ</figcaption>
+        </figure>
+        <figure>
+          <img src="images/dish-4.jpg" alt="チーズをかけたミートソースのパスタ" width="900" height="675" loading="lazy" decoding="async">
+          <figcaption>ミートソースのパスタ</figcaption>
+        </figure>
+        <figure>
+          <img src="images/dish-5.jpg" alt="海苔と青ねぎをのせた和風のパスタ" width="900" height="675" loading="lazy" decoding="async">
+          <figcaption>海苔と青ねぎのパスタ</figcaption>
+        </figure>
+        <figure>
+          <img src="images/dish-6.jpg" alt="バゲットを添えたチーズの一皿" width="900" height="675" loading="lazy" decoding="async">
+          <figcaption>チーズとバゲット</figcaption>
+        </figure>
+        <figure>
+          <img src="images/dish-7.jpg" alt="葉野菜のグリーンサラダ" width="900" height="675" loading="lazy" decoding="async">
+          <figcaption>グリーンサラダ</figcaption>
+        </figure>
+        <figure>
+          <img src="images/dish-8.jpg" alt="削り節をのせたフライドポテト" width="900" height="675" loading="lazy" decoding="async">
+          <figcaption>フライドポテト</figcaption>
+        </figure>
+      </div>
+
+      <p class="note">※ 写真は一例です。お品書きの正式な品名・価格は店頭にてご確認くださいませ。</p>
     </div>
   </section>
 
@@ -1234,6 +1323,7 @@ button { font: inherit; }
     '.hero-head, .hero-figure, .hero-facts, .greeting > *, .section-head, ' +
     '.about-body > p, .about-figure, .point, .band, .beer-card, .food-card, ' +
     '.lunch-figure, .lunch-copy > *, .scene-item, .gallery > li, ' +
+    '.beer-photos figure, .dish-grid figure, ' +
     '.hospitality .lead, .hospitality-actions, .reserve-card, ' +
     '.info-table, .info-side, .review-links'
   );
