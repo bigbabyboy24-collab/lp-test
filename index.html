@@ -5,15 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>ニホンバシブルワリー 池袋店｜クラフトビールと本格イタリアン</title>
-<meta name="description" content="池袋駅東口より徒歩2分。厳選した12種のクラフトビールと、ビールとの相性を考え抜いた本格イタリアン。木の温もりを活かした50席の店内で、デートにも女子会にも。ご予約は080-4116-7056。">
+<meta name="description" content="池袋駅東口より徒歩2分。厳選した12種のクラフトビールと、ビールとの相性を考え抜いた本格イタリアン。木の温もりを湛えた50席の店内で、静かなひとときをお過ごしください。ご予約は080-4116-7056。">
 <link rel="canonical" href="https://bigbabyboy24-collab.github.io/lp-test/">
 
 <!-- ===== OGP / Twitter Card =====
-     公開URLを変更した場合は、以下の og:url / og:image / canonical を差し替えてください -->
+     公開URLを変更した場合は、og:url / og:image / canonical を差し替えてください -->
 <meta property="og:type" content="restaurant.restaurant">
 <meta property="og:site_name" content="ニホンバシブルワリー 池袋店">
 <meta property="og:title" content="ニホンバシブルワリー 池袋店｜クラフトビールと本格イタリアン">
-<meta property="og:description" content="池袋駅東口より徒歩2分。厳選した12種のクラフトビールと、ビールとの相性を考え抜いた本格イタリアン。">
+<meta property="og:description" content="池袋駅東口より徒歩2分。厳選した12種のクラフトビールと、本格イタリアンをご用意しております。">
 <meta property="og:url" content="https://bigbabyboy24-collab.github.io/lp-test/">
 <meta property="og:image" content="https://bigbabyboy24-collab.github.io/lp-test/images/og.jpg">
 <meta property="og:image:width" content="1200">
@@ -24,12 +24,14 @@
 <meta name="twitter:title" content="ニホンバシブルワリー 池袋店｜クラフトビールと本格イタリアン">
 <meta name="twitter:description" content="池袋駅東口より徒歩2分。厳選した12種のクラフトビールと、本格イタリアン。">
 <meta name="twitter:image" content="https://bigbabyboy24-collab.github.io/lp-test/images/og.jpg">
-<meta name="theme-color" content="#191411">
+<meta name="theme-color" content="#FBF9F5">
 
-<!-- 英字見出し用のみ Latin サブセットで読み込み（和文は端末標準フォントを使用） -->
+<!-- 欧文見出し用のみ Latin サブセットで読み込み。
+     和文は端末標準の明朝／ゴシック（游明朝・ヒラギノ）を使用し、
+     Webフォントの読み込み待ちによる文字の跳ねを避けています。 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap">
 
 <!-- ===== 構造化データ（Restaurant） =====
      要確認：営業時間・電話番号・予算は 2025年2月オープン時点の情報です。
@@ -59,11 +61,7 @@
     "postalCode": "170-0013",
     "addressCountry": "JP"
   },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 35.7296,
-    "longitude": 139.7160
-  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 35.7296, "longitude": 139.7160 },
   "hasMap": "https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B1%8A%E5%B3%B6%E5%8C%BA%E6%9D%B1%E6%B1%A0%E8%A2%8B1-40-7",
   "publicAccess": true,
   "smokingAllowed": false,
@@ -88,79 +86,58 @@
     "https://tabelog.com/tokyo/A1305/A130501/13305524/"
   ],
   "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
-      "opens": "11:00",
-      "closes": "15:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
-      "opens": "17:00",
-      "closes": "23:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Friday", "Saturday"],
-      "opens": "11:00",
-      "closes": "23:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Sunday", "PublicHolidays"],
-      "opens": "11:00",
-      "closes": "22:00"
-    }
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "11:00", "closes": "15:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "17:00", "closes": "23:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "11:00", "closes": "23:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday","PublicHolidays"], "opens": "11:00", "closes": "22:00" }
   ]
 }
 </script>
 
 <style>
 /* =========================================================
-   NIHONBASHI BREWERY. 池袋店 — Landing Page
+   ニホンバシブルワリー 池袋店 — Landing Page
+   静けさ・余白・控えめな品格を軸にした構成
    モバイルファースト / ブレークポイント 768px・1280px
    ========================================================= */
 
 /* ---------- Design tokens ----------
-   アクセントは 1 色（--accent）。ほかはすべてニュートラル。
-   本文色はいずれもクリーム地に対してコントラスト比 4.5:1 以上。 */
+   面は生成り〜オフホワイト。加飾は細い罫線のみ。
+   本文色はいずれも背景に対しコントラスト比 4.5:1 以上（WCAG AA）。 */
 :root {
   /* 面 */
-  --bg:        #FAF7F2;   /* 基本背景（クリーム） */
-  --bg-deep:   #F2ECE1;   /* 一段落とした背景 */
-  --surface:   #FFFFFF;
-  --line:      #E0D5C4;
+  --paper:    #FBF9F5;   /* 生成り（基本背景） */
+  --paper-2:  #F4F0E8;   /* ごく薄いベージュ */
+  --white:    #FFFFFF;
+  --line:     #E4DED2;   /* 細罫 */
+  --line-2:   #EFEAE0;   /* さらに淡い罫 */
 
-  /* 文字（--bg 上のコントラスト比） */
-  --ink:       #1F1A16;   /* 15.1:1 */
-  --ink-2:     #4A4038;   /*  8.9:1 */
-  --ink-3:     #6E6157;   /*  5.7:1 */
+  /* 墨（真っ黒を避けた深い茶） */
+  --ink:      #2B2521;   /* 14.4:1 */
+  --ink-2:    #554C44;   /*  8.0:1 */
+  --ink-3:    #6F6459;   /*  5.4:1 */
 
-  /* アクセント（1色） */
-  /* クリーム地 5.4:1 / 濃い地 4.9:1 / 白文字を乗せて 5.7:1 — すべて AA を満たす */
-  --accent:      #A84A18;
-  --accent-deep: #82380F;
-  --accent-tint: #F6EBE1;
+  /* 加飾：落ち着いた金・ブロンズ（ごく控えめに） */
+  --bronze:      #836428; /* 5.2:1 — 欧文ラベル・リンク・CTA */
+  --bronze-deep: #6B5020;
+  --bronze-tint: #F0EADC;
 
-  /* 暗部（ヒーロー / フッター） */
-  --dark:      #191411;
-  --dark-2:    #241C17;
+  /* 補助：ごく淡い藍と緑（面積は最小限） */
+  --indigo:   #3D4A57;
+  --moss:     #5E6B50;
 
   /* レイアウト */
-  --header-h:  60px;
-  --r:         12px;
-  --r-lg:      20px;
-  --shadow:    0 1px 2px rgba(31,26,22,.05), 0 6px 18px rgba(31,26,22,.06);
-  --shadow-lg: 0 6px 16px rgba(31,26,22,.08), 0 24px 48px rgba(31,26,22,.10);
+  --header-h: 62px;
+  --r:        2px;        /* 角丸はほぼ直角に */
 
   /* 書体 */
-  --serif: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", serif;
-  --sans:  "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "YuGothic",
-           "Helvetica Neue", Arial, sans-serif;
-  --en:    "Cormorant Garamond", "Palatino", Georgia, serif;
+  --mincho: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "Noto Serif JP",
+            "MS PMincho", serif;
+  --gothic: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "YuGothic",
+            "Noto Sans JP", "Helvetica Neue", Arial, sans-serif;
+  --latin:  "Cormorant Garamond", "Palatino", Georgia, serif;
 
-  --ease: cubic-bezier(.22, .61, .36, 1);
+  --ease: cubic-bezier(.25, .46, .45, .94);
 }
 
 /* ---------- Reset ---------- */
@@ -168,18 +145,18 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--header-h) + 8px);
+  scroll-padding-top: calc(var(--header-h) + 12px);
   -webkit-text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
-  background: var(--bg);
+  background: var(--paper);
   color: var(--ink-2);
-  font-family: var(--sans);
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: .02em;
+  font-family: var(--gothic);
+  font-size: 15px;
+  line-height: 2.15;           /* ゆったりと読ませる */
+  letter-spacing: .06em;
   -webkit-font-smoothing: antialiased;
   overflow-wrap: anywhere;
 }
@@ -192,12 +169,7 @@ h1, h2, h3, h4, p { margin: 0; }
 a { color: inherit; text-decoration: none; }
 button { font: inherit; }
 
-/* フォーカスリングは必ず残す */
-:focus-visible {
-  outline: 3px solid var(--accent);
-  outline-offset: 3px;
-  border-radius: 4px;
-}
+:focus-visible { outline: 2px solid var(--bronze); outline-offset: 4px; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -209,78 +181,87 @@ button { font: inherit; }
 }
 
 /* ---------- Utilities ---------- */
-.container { width: min(1180px, 100% - 2rem); margin-inline: auto; }
+.container { width: min(1120px, 100% - 2.5rem); margin-inline: auto; }
+.narrow    { width: min(720px, 100% - 2.5rem); margin-inline: auto; }
 
 .skip-link {
   position: absolute; left: -9999px; top: 0; z-index: 200;
-  padding: .8rem 1.25rem; background: var(--ink); color: #fff;
+  padding: .8rem 1.25rem; background: var(--ink); color: var(--paper);
 }
 .skip-link:focus { left: 0; }
 
-.note { margin-top: 1.5rem; color: var(--ink-3); font-size: .8rem; line-height: 1.8; }
+.note { margin-top: 1.75rem; color: var(--ink-3); font-size: .76rem; line-height: 1.95; }
 
-/* ---------- Typography scale ----------
-   英字ラベル（小・レタースペース広め）→ 和文見出し（大・明朝）の対比 */
+/* 小さな加飾（細い縦罫）。和の意匠に寄せず、細線のみに留める */
+.ornament {
+  display: block; width: 1px; height: 44px;
+  margin: 0 auto 2.5rem;
+  background: linear-gradient(180deg, transparent, var(--bronze) 45%, transparent);
+}
+
+/* ---------- Typography ---------- */
 .label {
-  display: block;
-  margin-bottom: .75rem;
-  font-family: var(--en);
-  font-size: .8rem;
-  font-weight: 600;
-  letter-spacing: .34em;
-  text-transform: uppercase;
-  color: var(--accent);
+  display: block; margin-bottom: 1.5rem;
+  font-family: var(--latin);
+  font-size: .74rem; font-weight: 500;
+  letter-spacing: .42em; text-transform: uppercase;
+  color: var(--bronze);
 }
 .title {
-  font-family: var(--serif);
-  font-weight: 600;
-  font-size: clamp(1.5rem, 6vw, 2.6rem);
-  line-height: 1.5;
-  letter-spacing: .03em;
+  font-family: var(--mincho); font-weight: 500;
+  font-size: clamp(1.45rem, 5.6vw, 2.35rem);
+  line-height: 1.85;                 /* 見出しも余白で呼吸させる */
+  letter-spacing: .12em;
   color: var(--ink);
 }
-.desc { margin-top: 1.25rem; color: var(--ink-2); }
+.title-lg { font-size: clamp(1.7rem, 7vw, 3rem); }
+.lead {
+  margin-top: 2rem;
+  font-family: var(--mincho);
+  font-size: clamp(.95rem, 3.6vw, 1.06rem);
+  line-height: 2.4; letter-spacing: .1em;
+  color: var(--ink-2);
+}
+.desc { margin-top: 1.75rem; color: var(--ink-2); font-size: .9rem; }
 
-.section { padding: clamp(3.5rem, 11vw, 7rem) 0; }
-.section-tint { background: var(--bg-deep); }
-.section-head { max-width: 46rem; margin-bottom: clamp(2rem, 6vw, 3.5rem); }
+/* セクション：間隔を大きく取り、細罫で静かに区切る */
+.section { padding: clamp(4.5rem, 15vw, 9rem) 0; }
+.section-tint { background: var(--paper-2); }
+.section + .section:not(.section-tint):not(.section-dark) { border-top: 1px solid var(--line-2); }
+.section-head { margin-bottom: clamp(2.5rem, 8vw, 4.5rem); }
+.section-head-center { text-align: center; }
 
-/* ---------- Buttons ---------- */
+/* ---------- Buttons：角はほぼ直角、装飾は最小限 ---------- */
 .btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: .55em;
-  width: 100%;
-  min-height: 52px;              /* タップ領域を確保 */
-  padding: .85em 1.5em;
-  border: 1px solid transparent;
-  border-radius: 999px;
-  font-size: .95rem;
-  font-weight: 700;
-  letter-spacing: .05em;
-  line-height: 1.4;
-  text-align: center;
+  display: flex; align-items: center; justify-content: center; gap: .6em;
+  width: 100%; min-height: 54px; padding: .9em 1.75em;
+  border: 1px solid transparent; border-radius: var(--r);
+  font-family: var(--gothic);
+  font-size: .86rem; font-weight: 500;
+  letter-spacing: .14em; line-height: 1.5; text-align: center;
   cursor: pointer;
-  transition: background-color .25s var(--ease), color .25s var(--ease),
-              border-color .25s var(--ease), transform .2s var(--ease),
-              box-shadow .25s var(--ease);
+  transition: background-color .45s var(--ease), color .45s var(--ease),
+              border-color .45s var(--ease), opacity .45s var(--ease);
 }
-.btn:hover { transform: translateY(-2px); }
-.btn:active { transform: translateY(0); }
-.btn svg { flex: none; width: 1.15em; height: 1.15em; }
+.btn svg { flex: none; width: 1.05em; height: 1.05em; }
 
-.btn-primary {
-  background: var(--accent); color: #fff;
-  box-shadow: 0 4px 14px rgba(168,74,24,.3);
-}
-.btn-primary:hover { background: var(--accent-deep); box-shadow: 0 8px 22px rgba(168,74,24,.36); }
+.btn-primary { background: var(--bronze); color: var(--white); }
+.btn-primary:hover { background: var(--bronze-deep); }
 
 .btn-outline { background: transparent; color: var(--ink); border-color: var(--line); }
-.btn-outline:hover { background: var(--surface); border-color: var(--ink-3); }
+.btn-outline:hover { background: var(--white); border-color: var(--bronze); }
 
-.btn-onDark { background: rgba(255,255,255,.1); color: #fff; border-color: rgba(255,255,255,.42); }
-.btn-onDark:hover { background: rgba(255,255,255,.2); border-color: #fff; }
+.btn-quiet {
+  width: auto; min-height: 0; padding: 0 0 .35rem;
+  border: 0; border-bottom: 1px solid var(--line);
+  border-radius: 0; color: var(--ink);
+  font-size: .82rem; letter-spacing: .16em;
+  transition: border-color .45s var(--ease), color .45s var(--ease);
+}
+.btn-quiet:hover { color: var(--bronze); border-bottom-color: var(--bronze); }
+
+.btn-onDark { background: transparent; color: var(--white); border-color: rgba(255,255,255,.4); }
+.btn-onDark:hover { background: rgba(255,255,255,.1); border-color: var(--white); }
 
 /* =========================================================
    Header
@@ -288,427 +269,392 @@ button { font: inherit; }
 .site-header {
   position: fixed; inset: 0 0 auto 0; z-index: 100;
   height: var(--header-h);
-  background: rgba(250,247,242,.9);
-  backdrop-filter: saturate(150%) blur(12px);
-  -webkit-backdrop-filter: saturate(150%) blur(12px);
+  background: rgba(251,249,245,.92);
+  backdrop-filter: saturate(120%) blur(10px);
+  -webkit-backdrop-filter: saturate(120%) blur(10px);
   border-bottom: 1px solid transparent;
-  transition: background-color .3s var(--ease), border-color .3s var(--ease);
+  transition: border-color .5s var(--ease), background-color .5s var(--ease);
 }
-.site-header.is-scrolled { background: rgba(250,247,242,.97); border-bottom-color: var(--line); }
-
+.site-header.is-scrolled { background: rgba(251,249,245,.98); border-bottom-color: var(--line-2); }
 .header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 
-.brand { display: grid; line-height: 1.3; }
-.brand-en { font-family: var(--en); font-size: 1rem; font-weight: 600; letter-spacing: .16em; color: var(--ink); }
-.brand-ja { font-size: .64rem; letter-spacing: .08em; color: var(--ink-3); }
+.brand { display: grid; gap: .2rem; line-height: 1.3; }
+.brand-en { font-family: var(--latin); font-size: .95rem; letter-spacing: .2em; color: var(--ink); }
+.brand-ja { font-size: .6rem; letter-spacing: .16em; color: var(--ink-3); }
 
 .nav-toggle {
   display: grid; place-content: center;
-  width: 44px; height: 44px; padding: 0;
-  background: none; border: 0; cursor: pointer;
+  width: 44px; height: 44px; padding: 0; background: none; border: 0; cursor: pointer;
 }
 .nav-toggle span {
-  display: block; width: 22px; height: 1.5px; margin: 5px 0;
-  background: var(--ink); border-radius: 2px;
-  transition: transform .3s var(--ease), opacity .2s var(--ease);
+  display: block; width: 20px; height: 1px; margin: 5px 0;
+  background: var(--ink);
+  transition: transform .4s var(--ease), opacity .3s var(--ease);
 }
-.nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
 .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
-.nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+.nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 
 .nav {
   position: fixed; inset: var(--header-h) 0 auto 0;
-  padding: .5rem 1rem calc(1.5rem + env(safe-area-inset-bottom));
-  max-height: calc(100dvh - var(--header-h));
-  overflow-y: auto;
-  background: rgba(250,247,242,.99);
-  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  max-height: calc(100dvh - var(--header-h)); overflow-y: auto;
+  padding: .5rem 1.25rem calc(2rem + env(safe-area-inset-bottom));
+  background: rgba(251,249,245,.99);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
-  box-shadow: var(--shadow-lg);
-  opacity: 0; visibility: hidden; transform: translateY(-8px);
-  transition: opacity .26s var(--ease), transform .26s var(--ease), visibility .26s;
+  opacity: 0; visibility: hidden;
+  transition: opacity .45s var(--ease), visibility .45s;
 }
-.nav.is-open { opacity: 1; visibility: visible; transform: none; }
+.nav.is-open { opacity: 1; visibility: visible; }
 .nav-list a {
-  display: block; padding: .9rem .25rem;
-  border-bottom: 1px solid var(--line);
-  font-size: .95rem; color: var(--ink);
+  display: block; padding: 1rem .25rem;
+  border-bottom: 1px solid var(--line-2);
+  font-size: .88rem; letter-spacing: .12em; color: var(--ink);
 }
-.nav-cta { margin-top: 1.25rem; }
+.nav-cta { margin-top: 1.5rem; }
 
 /* =========================================================
-   Hero（暗いオーバーレイ + 白文字）
+   Hero：写真を大きく、文字は最小限。周囲に余白を確保する
    ========================================================= */
-.hero {
-  position: relative;
-  display: flex; align-items: flex-end;
-  min-height: 88svh;
-  padding: calc(var(--header-h) + 4rem) 0 3rem;
-  /* 画像が無くても成立するフォールバック */
-  background:
-    radial-gradient(120% 80% at 75% 15%, rgba(168,74,24,.5) 0%, rgba(168,74,24,0) 60%),
-    linear-gradient(165deg, #3A2A1E 0%, var(--dark-2) 55%, var(--dark) 100%);
-  overflow: hidden;
-}
-/* ▼ 差し替え箇所：images/hero.jpg（推奨 2000×1200 / 5:3）
-     alt="" は装飾扱い。文字が乗るため被写体は右〜中央寄りが理想 */
-.hero-img {
-  position: absolute; inset: 0;
-  width: 100%; height: 100%;
-  object-fit: cover;
-  opacity: .55;
-}
-.hero::after {
-  content: "";
-  position: absolute; inset: 0;
-  background:
-    linear-gradient(180deg, rgba(25,20,17,.72) 0%, rgba(25,20,17,.36) 34%, rgba(25,20,17,.9) 100%),
-    linear-gradient(95deg, rgba(25,20,17,.7) 0%, rgba(25,20,17,.25) 70%);
-}
-.hero-inner { position: relative; z-index: 1; color: #fff; }
-
-.hero-eyebrow {
-  display: inline-flex; align-items: center; gap: .5em;
-  margin-bottom: 1.25rem; padding: .4em 1em;
-  border: 1px solid rgba(255,255,255,.45); border-radius: 999px;
-  font-size: .74rem; letter-spacing: .1em; color: #fff;
-}
-.hero-eyebrow::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: #E8873F; }
-
-.hero-title { display: grid; gap: .9rem; margin-bottom: 1.25rem; }
+.hero { padding: calc(var(--header-h) + clamp(3rem, 12vw, 6rem)) 0 clamp(3rem, 10vw, 5.5rem); }
+.hero-head { text-align: center; margin-bottom: clamp(2.5rem, 8vw, 4rem); }
 .hero-en {
-  font-family: var(--en); font-size: clamp(.85rem, 3.4vw, 1.05rem);
-  font-weight: 600; letter-spacing: .32em; color: #EBA870;
+  display: block; margin-bottom: 1.75rem;
+  font-family: var(--latin); font-size: clamp(.78rem, 3vw, .92rem);
+  letter-spacing: .46em; text-transform: uppercase; color: var(--bronze);
 }
 .hero-ja {
-  font-family: var(--serif); font-weight: 600; color: #fff;
-  font-size: clamp(1.85rem, 8.2vw, 4rem); line-height: 1.4; letter-spacing: .03em;
-  text-shadow: 0 2px 18px rgba(0,0,0,.5);
+  font-family: var(--mincho); font-weight: 500;
+  font-size: clamp(1.6rem, 7.4vw, 3.1rem);
+  line-height: 1.95; letter-spacing: .14em; color: var(--ink);
 }
-.hero-lead {
-  max-width: 34em; margin-bottom: 2rem;
-  color: rgba(255,255,255,.94); font-size: clamp(.9rem, 3.6vw, 1.02rem); line-height: 2;
+.hero-sub {
+  margin-top: 1.75rem;
+  font-size: .8rem; letter-spacing: .18em; color: var(--ink-3);
 }
-.hero-actions { display: grid; gap: .7rem; margin-bottom: 2.25rem; }
+
+/* ▼ 差し替え箇所：images/hero.jpg（推奨 2000×1200 / 5:3）
+     画像の周囲に余白を確保するため、コンテナ幅の内側に収めています */
+.hero-figure {
+  position: relative; overflow: hidden;
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(140deg, var(--paper-2), #D9CFBC);
+}
+.hero-figure img { width: 100%; height: 100%; object-fit: cover; }
 
 .hero-facts {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem;
-  padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,.28);
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  margin-top: clamp(2.5rem, 8vw, 4rem);
+  border-top: 1px solid var(--line);
 }
+.hero-facts li { padding: 1.75rem .5rem; text-align: center; }
+.hero-facts li + li { border-left: 1px solid var(--line); }
 .hero-facts strong {
-  display: block; font-family: var(--en); font-size: 1.75rem;
-  font-weight: 600; line-height: 1.1; color: #EBA870;
+  display: block; margin-bottom: .5rem;
+  font-family: var(--latin); font-size: 1.9rem; font-weight: 400;
+  line-height: 1; letter-spacing: .04em; color: var(--bronze);
 }
-.hero-facts span { font-size: .72rem; letter-spacing: .04em; color: rgba(255,255,255,.9); }
+.hero-facts span { font-size: .7rem; letter-spacing: .1em; color: var(--ink-3); }
 
 /* =========================================================
-   共通：画像フレーム（比率固定・キャプション付き）
-   画像が未設定でもレイアウトが崩れないよう aspect-ratio で確保
+   Greeting：静かな導入
    ========================================================= */
-.frame {
-  position: relative;
-  overflow: hidden;
-  border-radius: var(--r);
-  background: linear-gradient(135deg, #4A3728, #241C17);  /* 画像未設定時の下地 */
-}
-.frame img { width: 100%; height: 100%; object-fit: cover; }
-.frame-4x3 { aspect-ratio: 4 / 3; }
-.frame-6x5 { aspect-ratio: 6 / 5; }
-.frame-9x7 { aspect-ratio: 9 / 7; }
-.frame-band { aspect-ratio: 20 / 9; }
-
-/* 画像の上に薄く重ねる説明キャプション */
-.frame figcaption,
-.frame-cap {
-  position: absolute; inset: auto 0 0 0;
-  padding: 1.75rem .9rem .7rem;
-  background: linear-gradient(180deg, rgba(25,20,17,0), rgba(25,20,17,.78));
-  color: #fff; font-size: .76rem; letter-spacing: .04em; line-height: 1.6;
-}
+.greeting { text-align: center; }
+.greeting .lead { margin-top: 2.5rem; }
 
 /* =========================================================
-   Concept
+   About：ブランドストーリー
    ========================================================= */
-.concept-lead { font-family: var(--serif); font-size: 1.15rem; line-height: 1.9; color: var(--ink); }
-.concept-copy p + p { margin-top: 1.15rem; }
-.concept-sign {
-  margin-top: 1.75rem; padding-top: 1.15rem; border-top: 1px solid var(--line);
-  font-size: .8rem; letter-spacing: .08em; color: var(--ink-3);
+.about-body p + p { margin-top: 1.75rem; }
+.about-body p { font-size: .9rem; }
+.about-sign {
+  margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line);
+  font-size: .76rem; letter-spacing: .12em; color: var(--ink-3);
 }
-.points { display: grid; gap: .9rem; margin-top: 2.5rem; }
-.point {
-  position: relative; padding: 1.75rem 1.5rem;
-  background: var(--surface); border-radius: var(--r); box-shadow: var(--shadow);
-}
+.about-figure { margin-top: 3rem; aspect-ratio: 3 / 2; overflow: hidden; background: var(--paper-2); }
+.about-figure img { width: 100%; height: 100%; object-fit: cover; }
+
+.points { display: grid; gap: 0; margin-top: clamp(3rem, 8vw, 4.5rem); border-top: 1px solid var(--line-2); }
+.point { padding: 2.25rem 0; border-bottom: 1px solid var(--line-2); }
 .point-num {
-  position: absolute; top: 1.1rem; right: 1.3rem;
-  font-family: var(--en); font-size: 1.5rem; font-weight: 600; color: var(--line);
+  display: block; margin-bottom: .9rem;
+  font-family: var(--latin); font-size: .8rem; letter-spacing: .3em; color: var(--bronze);
 }
 .point h3 {
-  margin-bottom: .5rem; padding-right: 2.75rem;
-  font-family: var(--serif); font-size: 1.05rem; font-weight: 600; color: var(--ink);
+  margin-bottom: .9rem;
+  font-family: var(--mincho); font-size: 1.05rem; font-weight: 500;
+  letter-spacing: .1em; color: var(--ink);
 }
-.point p { font-size: .88rem; color: var(--ink-2); line-height: 1.9; }
+.point p { font-size: .86rem; }
 
 /* =========================================================
    Beer
    ========================================================= */
-.beer-band { margin-bottom: 1.75rem; box-shadow: var(--shadow-lg); border-radius: var(--r-lg); }
-.beer-grid { display: grid; gap: 1rem; }
-.beer-card { padding: 1.5rem 1.35rem 1.75rem; background: var(--surface); border-radius: var(--r); box-shadow: var(--shadow); }
-.beer-swatch { height: 84px; margin-bottom: 1.15rem; border-radius: 8px; position: relative; overflow: hidden; }
-.beer-swatch::after {
-  content: ""; position: absolute; inset: 0 0 auto 0; height: 20%;
-  background: linear-gradient(180deg, rgba(255,255,255,.9), rgba(255,255,255,.3));
+.band { overflow: hidden; aspect-ratio: 20 / 9; background: var(--paper-2); }
+.band img { width: 100%; height: 100%; object-fit: cover; }
+
+.beer-grid { display: grid; gap: 0; margin-top: clamp(3rem, 8vw, 4.5rem); border-top: 1px solid var(--line); }
+.beer-card { padding: 2.25rem 0; border-bottom: 1px solid var(--line); }
+.beer-rule { width: 40px; height: 2px; margin-bottom: 1.5rem; }
+.beer-rule[data-tone="ipa"]   { background: #C08A2E; }
+.beer-rule[data-tone="pale"]  { background: #D9AE55; }
+.beer-rule[data-tone="stout"] { background: #4A362A; }
+.beer-rule[data-tone="more"]  { background: var(--bronze); }
+.beer-card h3 {
+  font-family: var(--mincho); font-size: 1.1rem; font-weight: 500;
+  letter-spacing: .1em; color: var(--ink);
 }
-.beer-swatch[data-tone="ipa"]   { background: linear-gradient(180deg, #E8A03C, #C2701C); }
-.beer-swatch[data-tone="pale"]  { background: linear-gradient(180deg, #F2C868, #DC9C34); }
-.beer-swatch[data-tone="stout"] { background: linear-gradient(180deg, #5C3F2C, #241611); }
-.beer-swatch[data-tone="more"]  { background: linear-gradient(135deg, #E8A03C, #A84A18 48%, #241611); }
-.beer-card h3 { font-family: var(--serif); font-size: 1.1rem; font-weight: 600; color: var(--ink); }
-.beer-style { margin-bottom: .75rem; font-family: var(--en); font-size: .78rem; font-weight: 600; letter-spacing: .12em; color: var(--accent); }
-.beer-card p:last-child { font-size: .85rem; color: var(--ink-2); line-height: 1.9; }
+.beer-style {
+  margin: .4rem 0 1.15rem;
+  font-family: var(--latin); font-size: .74rem; letter-spacing: .24em;
+  text-transform: uppercase; color: var(--bronze);
+}
+.beer-card p:last-child { font-size: .85rem; }
 
 /* =========================================================
-   Food
+   Food：整然と並ぶカード（写真＋短い説明＋控えめなCTA）
    ========================================================= */
-.food-grid { display: grid; gap: 1.25rem; }
-.food-card { overflow: hidden; background: var(--surface); border-radius: var(--r-lg); box-shadow: var(--shadow); }
-.food-card .frame { border-radius: 0; }
-.food-body { padding: 1.4rem 1.35rem 1.6rem; }
-.food-cat { margin-bottom: .4rem; font-family: var(--en); font-size: .76rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); }
-.food-card h3 { margin-bottom: .6rem; font-family: var(--serif); font-size: 1.1rem; font-weight: 600; line-height: 1.55; color: var(--ink); }
-.food-body p:last-child { font-size: .87rem; color: var(--ink-2); line-height: 1.9; }
+.food-grid { display: grid; gap: clamp(2.5rem, 8vw, 3.5rem); }
+.food-card figure { overflow: hidden; aspect-ratio: 4 / 3; background: var(--paper-2); }
+.food-card figure img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: opacity .6s var(--ease);
+}
+.food-card:hover figure img { opacity: .88; }
+.food-body { padding-top: 1.75rem; }
+.food-cat {
+  margin-bottom: .7rem;
+  font-family: var(--latin); font-size: .7rem; letter-spacing: .28em;
+  text-transform: uppercase; color: var(--bronze);
+}
+.food-card h3 {
+  margin-bottom: .9rem;
+  font-family: var(--mincho); font-size: 1.08rem; font-weight: 500;
+  line-height: 1.8; letter-spacing: .08em; color: var(--ink);
+}
+.food-body p:last-of-type { font-size: .85rem; }
 
 /* =========================================================
    Lunch
    ========================================================= */
-.lunch-panel { overflow: hidden; background: var(--surface); border-radius: var(--r-lg); box-shadow: var(--shadow-lg); }
-.lunch-panel .frame { border-radius: 0; }
-.lunch-copy { padding: clamp(1.5rem, 6vw, 3rem); }
-.lunch-copy .title { margin-bottom: 1.15rem; }
-.lunch-copy strong { color: var(--accent); font-weight: 700; }
+.lunch-figure { overflow: hidden; aspect-ratio: 6 / 5; background: var(--paper-2); }
+.lunch-figure img { width: 100%; height: 100%; object-fit: cover; }
+.lunch-copy { padding-top: 2.5rem; }
+.lunch-copy p { font-size: .9rem; }
 .lunch-time {
-  margin-top: 1.5rem; padding: 1.15rem 1.25rem;
-  background: var(--bg); border-radius: var(--r);
-  font-size: .9rem; line-height: 2; color: var(--ink);
+  margin-top: 2rem; padding: 1.75rem 0;
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  font-size: .86rem; line-height: 2.4; letter-spacing: .08em; color: var(--ink);
 }
-.lunch-time span { display: inline-block; width: 4.5em; font-size: .76rem; letter-spacing: .08em; color: var(--ink-3); }
-.lunch-time small { font-size: .76rem; color: var(--ink-3); }
-
-/* =========================================================
-   Budget
-   ========================================================= */
-.budget { display: grid; gap: .9rem; margin-top: 2rem; }
-.budget-card {
-  display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
-  padding: 1.15rem 1.35rem;
-  background: var(--surface); border: 1px solid var(--line); border-radius: var(--r);
-}
-.budget-card dt { font-size: .85rem; letter-spacing: .08em; color: var(--ink-3); }
-.budget-card dd { font-family: var(--en); font-size: 1.5rem; font-weight: 600; color: var(--accent); }
-.budget-card dd small { font-family: var(--sans); font-size: .78rem; color: var(--ink-3); }
+.lunch-time span { display: inline-block; width: 4.5em; font-size: .74rem; color: var(--ink-3); }
+.lunch-time small { font-size: .74rem; color: var(--ink-3); }
 
 /* =========================================================
    Scene
    ========================================================= */
-.scene-list { display: grid; gap: .9rem; }
-.scene-item { padding: 1.75rem 1.5rem; border: 1px solid var(--line); border-radius: var(--r); background: var(--surface); }
-.scene-icon { width: 30px; height: 30px; margin-bottom: .9rem; color: var(--accent); }
-.scene-item h3 { margin-bottom: .45rem; font-family: var(--serif); font-size: 1.02rem; font-weight: 600; color: var(--ink); }
-.scene-item p { font-size: .86rem; color: var(--ink-2); line-height: 1.85; }
+.scene-list { display: grid; gap: 0; border-top: 1px solid var(--line-2); }
+.scene-item { display: grid; gap: .6rem; padding: 2rem 0; border-bottom: 1px solid var(--line-2); }
+.scene-icon { width: 26px; height: 26px; color: var(--bronze); }
+.scene-item h3 {
+  font-family: var(--mincho); font-size: 1rem; font-weight: 500;
+  letter-spacing: .1em; color: var(--ink);
+}
+.scene-item p { font-size: .85rem; }
 
 /* =========================================================
    Interior gallery
    ========================================================= */
-.gallery { display: grid; gap: .9rem; }
-
-/* =========================================================
-   Voice / Media（掲載枠）
-   ========================================================= */
-.voice-actions { display: grid; gap: .7rem; margin-top: .5rem; max-width: 44rem; }
-@media (min-width: 768px) { .voice-actions { grid-template-columns: 1fr 1fr; } }
-
-.media-strip { margin-top: 2rem; }
-.media-title { margin-bottom: 1rem; font-size: .82rem; letter-spacing: .12em; color: var(--ink-3); }
-.media-logos { display: grid; grid-template-columns: repeat(2, 1fr); gap: .75rem; }
-.media-logo {
-  display: grid; place-content: center;
-  min-height: 68px; padding: .5rem;
-  background: var(--surface); border: 1px dashed var(--line); border-radius: var(--r);
-  font-size: .76rem; letter-spacing: .06em; color: var(--ink-3); text-align: center;
+.gallery { display: grid; gap: clamp(1.5rem, 5vw, 2rem); }
+.gallery figure { overflow: hidden; aspect-ratio: 9 / 7; background: var(--paper-2); }
+.gallery figure img { width: 100%; height: 100%; object-fit: cover; }
+.gallery figcaption {
+  padding-top: 1rem;
+  font-size: .76rem; letter-spacing: .12em; color: var(--ink-3);
 }
 
 /* =========================================================
-   Party
+   Hospitality（おもてなし・貸切）
    ========================================================= */
-.section-accent { background: linear-gradient(160deg, var(--accent-tint), var(--bg-deep)); }
-.party-inner { max-width: 44rem; }
-.party-lead { margin-top: 1.5rem; color: var(--ink-2); }
-.party-note { margin: .9rem 0 1.75rem; font-size: .86rem; color: var(--ink-3); }
+.section-accent { background: var(--bronze-tint); }
+.hospitality { text-align: center; }
+.hospitality .note { margin-bottom: 2.5rem; }
+.hospitality-actions { display: grid; gap: .8rem; max-width: 22rem; margin-inline: auto; }
 
 /* =========================================================
-   Reserve（予約導線）
+   Reserve
    ========================================================= */
-.section-dark { background: var(--dark); color: rgba(255,255,255,.88); }
-.section-dark .title { color: #fff; }
-.section-dark .label { color: #EBA870; }
-.section-dark .desc { color: rgba(255,255,255,.86); }
+.section-dark { background: var(--ink); color: rgba(251,249,245,.86); }
+.section-dark .title { color: var(--paper); }
+.section-dark .label { color: #C9A961; }
+.section-dark .desc { color: rgba(251,249,245,.82); }
 
-.reserve-grid { display: grid; gap: .8rem; margin-top: 2rem; }
+.reserve-grid { display: grid; gap: 0; border-top: 1px solid rgba(251,249,245,.2); }
 .reserve-card {
-  display: grid; gap: .9rem;
-  padding: 1.6rem 1.5rem;
-  background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.16); border-radius: var(--r);
+  display: grid; gap: 1.15rem; padding: 2.5rem 0;
+  border-bottom: 1px solid rgba(251,249,245,.2);
 }
-.reserve-card h3 { font-family: var(--serif); font-size: 1.05rem; font-weight: 600; color: #fff; }
-.reserve-card p { font-size: .84rem; line-height: 1.85; color: rgba(255,255,255,.82); }
+.reserve-card h3 {
+  font-family: var(--mincho); font-size: 1.05rem; font-weight: 500;
+  letter-spacing: .12em; color: var(--paper);
+}
+.reserve-card p { font-size: .84rem; color: rgba(251,249,245,.82); }
 .reserve-tel {
-  display: inline-block;
-  font-family: var(--en); font-size: 1.85rem; font-weight: 600; letter-spacing: .04em;
-  color: #fff;
+  font-family: var(--latin); font-size: 1.9rem; letter-spacing: .06em; color: var(--paper);
+  transition: opacity .45s var(--ease);
 }
-.reserve-soon { font-size: .74rem; letter-spacing: .06em; color: rgba(255,255,255,.6); }
+.reserve-tel:hover { opacity: .75; }
+.reserve-soon { font-size: .74rem; color: rgba(251,249,245,.62); }
 
 /* =========================================================
    Info
    ========================================================= */
 .info-table { border-top: 1px solid var(--line); }
-.info-row { display: grid; gap: .3rem; padding: 1.1rem 0; border-bottom: 1px solid var(--line); }
-.info-row dt { font-size: .8rem; letter-spacing: .1em; color: var(--ink-3); }
-.info-row dd { font-size: .93rem; line-height: 1.9; color: var(--ink); }
-.info-row dd a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
-.info-sub { font-size: .8rem; color: var(--ink-3); }
-.hours-day { display: inline-block; width: 4em; font-size: .76rem; letter-spacing: .06em; color: var(--ink-3); }
-.info-row dd small { font-size: .76rem; color: var(--ink-3); }
+.info-row { display: grid; gap: .4rem; padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
+.info-row dt { font-size: .74rem; letter-spacing: .18em; color: var(--ink-3); }
+.info-row dd { font-size: .88rem; line-height: 2.1; color: var(--ink); }
+.info-row dd a {
+  color: var(--ink); border-bottom: 1px solid var(--line);
+  transition: color .45s var(--ease), border-color .45s var(--ease);
+}
+.info-row dd a:hover { color: var(--bronze); border-bottom-color: var(--bronze); }
+.info-sub { font-size: .76rem; color: var(--ink-3); }
+.hours-day { display: inline-block; width: 4em; font-size: .74rem; color: var(--ink-3); }
+.info-row dd small { font-size: .74rem; color: var(--ink-3); }
 
-.info-side { display: grid; gap: .7rem; margin-top: 1.75rem; }
-.map-embed { overflow: hidden; border-radius: var(--r); box-shadow: var(--shadow); margin-bottom: .35rem; }
+.info-side { display: grid; gap: .8rem; margin-top: 2.5rem; }
+.map-embed { overflow: hidden; border: 1px solid var(--line); margin-bottom: .5rem; }
 .map-embed iframe { width: 100%; height: 260px; }
+
+.review-links { display: grid; gap: 1.25rem; margin-top: clamp(3rem, 8vw, 4rem); padding-top: 2.5rem; border-top: 1px solid var(--line-2); }
+.review-links .review-note { font-size: .82rem; color: var(--ink-3); }
 
 /* =========================================================
    Footer
    ========================================================= */
 .site-footer {
-  padding: clamp(2.5rem, 8vw, 4rem) 0 calc(6.5rem + env(safe-area-inset-bottom));
-  background: var(--dark); color: rgba(255,255,255,.72);
+  padding: clamp(3.5rem, 10vw, 5rem) 0 calc(7rem + env(safe-area-inset-bottom));
+  background: var(--paper-2); border-top: 1px solid var(--line);
 }
-.footer-inner { display: grid; gap: 1.75rem; }
-.site-footer .brand-en { color: #fff; font-size: 1.05rem; }
-.site-footer .brand-ja { color: rgba(255,255,255,.7); margin-top: .3rem; }
-.footer-addr { margin-top: .9rem; font-size: .82rem; line-height: 1.85; color: rgba(255,255,255,.66); }
-.footer-nav { display: flex; flex-wrap: wrap; gap: .9rem 1.5rem; }
-.footer-nav a { font-size: .84rem; color: rgba(255,255,255,.82); }
-.footer-nav a:hover { color: #EBA870; }
-.footer-copy { padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,.16); font-size: .76rem; letter-spacing: .06em; color: rgba(255,255,255,.6); }
+.footer-inner { display: grid; gap: 2.5rem; }
+.site-footer .brand-en { color: var(--ink); font-size: 1rem; }
+.site-footer .brand-ja { color: var(--ink-3); margin-top: .35rem; }
+.footer-addr { margin-top: 1.25rem; font-size: .78rem; line-height: 2.1; color: var(--ink-3); }
+.footer-nav { display: grid; gap: .9rem; }
+.footer-nav a {
+  font-size: .8rem; letter-spacing: .12em; color: var(--ink-2);
+  transition: color .45s var(--ease);
+}
+.footer-nav a:hover { color: var(--bronze); }
+.footer-copy {
+  padding-top: 2rem; border-top: 1px solid var(--line);
+  font-size: .72rem; letter-spacing: .12em; color: var(--ink-3);
+}
 
 /* =========================================================
    Sticky CTA（モバイル）
-   ヒーローを過ぎたら出現し、フッターに達したら収まる
    ========================================================= */
 .sticky-cta {
   position: fixed; z-index: 95; inset: auto 0 0 0;
-  padding: .65rem .9rem calc(.65rem + env(safe-area-inset-bottom));
-  background: rgba(250,247,242,.95);
-  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
+  padding: 0;
+  background: var(--line);
   border-top: 1px solid var(--line);
   transform: translateY(110%);
-  transition: transform .35s var(--ease);
+  transition: transform .5s var(--ease);
 }
 .sticky-cta.is-visible { transform: none; }
-.sticky-cta { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; }
-.sticky-cta .btn { box-shadow: none; min-height: 48px; padding: .7em .5em; font-size: .88rem; }
-.sticky-cta .btn-outline { background: var(--surface); }
+.sticky-cta .btn {
+  min-height: 56px; padding: .8em .5em calc(.8em + env(safe-area-inset-bottom));
+  border: 0; border-radius: 0; font-size: .8rem; letter-spacing: .1em;
+}
+.sticky-cta .btn-outline { background: var(--paper); }
 
 /* =========================================================
-   Scroll reveal（prefers-reduced-motion 時は JS 側で無効化）
+   Scroll reveal：ゆっくりとしたフェードインのみ
    ========================================================= */
-.reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.reveal {
+  opacity: 0; transform: translateY(12px);
+  transition: opacity 1.2s var(--ease), transform 1.2s var(--ease);
+}
 .reveal.is-in { opacity: 1; transform: none; }
 
 /* =========================================================
-   768px 以上（タブレット）
+   768px 以上
    ========================================================= */
 @media (min-width: 768px) {
-  :root { --header-h: 72px; }
+  :root { --header-h: 76px; }
+  body { font-size: 15.5px; }
 
-  .container { width: min(1180px, 100% - 3rem); }
+  .container { width: min(1120px, 100% - 4rem); }
+  .narrow    { width: min(720px, 100% - 4rem); }
 
-  /* ナビを横並びに戻す */
   .nav-toggle { display: none; }
   .nav {
-    position: static; display: flex; align-items: center; gap: 1.75rem;
+    position: static; display: flex; align-items: center; gap: 2rem;
     max-height: none; padding: 0; overflow: visible;
     background: none; backdrop-filter: none; -webkit-backdrop-filter: none;
-    border: 0; box-shadow: none;
-    opacity: 1; visibility: visible; transform: none;
+    border: 0; opacity: 1; visibility: visible;
   }
-  .nav-list { display: flex; align-items: center; gap: 1.25rem; }
-  .nav-list a { padding: 0; border: 0; font-size: .82rem; color: var(--ink-2); position: relative; }
-  .nav-list a::after {
-    content: ""; position: absolute; left: 0; bottom: -5px; width: 100%; height: 1px;
-    background: var(--accent); transform: scaleX(0); transform-origin: right;
-    transition: transform .3s var(--ease);
+  .nav-list { display: flex; align-items: center; gap: 1.5rem; }
+  .nav-list a {
+    padding: 0; border: 0; font-size: .76rem; letter-spacing: .1em; color: var(--ink-2);
+    border-bottom: 1px solid transparent;
+    transition: color .45s var(--ease), border-color .45s var(--ease);
   }
-  .nav-list a:hover { color: var(--ink); }
-  .nav-list a:hover::after { transform: scaleX(1); transform-origin: left; }
-  .nav-cta { margin-top: 0; width: auto; min-height: 42px; padding: .55em 1.2em; font-size: .8rem; }
+  .nav-list a:hover { color: var(--ink); border-bottom-color: var(--bronze); }
+  .nav-cta { margin-top: 0; width: auto; min-height: 40px; padding: .5em 1.4em; font-size: .74rem; }
 
-  .hero { align-items: center; min-height: min(92svh, 800px); }
-  .hero-actions { grid-auto-flow: column; justify-content: start; gap: .8rem; }
-  .hero-actions .btn { width: auto; padding: 1em 2.2em; }
-  .hero-facts { max-width: 34rem; gap: 1.5rem; }
-  .hero-facts strong { font-size: 2.1rem; }
-  .hero-facts span { font-size: .78rem; }
+  .hero-facts li { padding: 2.25rem .5rem; }
+  .hero-facts strong { font-size: 2.3rem; }
+  .hero-facts span { font-size: .74rem; }
 
-  .points { grid-template-columns: repeat(3, 1fr); }
-  .beer-grid  { grid-template-columns: repeat(2, 1fr); }
-  .food-grid  { grid-template-columns: repeat(2, 1fr); }
-  .scene-list { grid-template-columns: repeat(2, 1fr); }
-  .gallery    { grid-template-columns: repeat(2, 1fr); }
-  .media-logos { grid-template-columns: repeat(4, 1fr); }
-  .budget { grid-template-columns: repeat(2, 1fr); }
-  .reserve-grid { grid-template-columns: repeat(3, 1fr); }
+  .points { grid-template-columns: repeat(3, 1fr); column-gap: 3rem; }
+  .point { border-bottom: 0; padding-bottom: 0; }
 
-  .lunch-panel { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; }
-  .lunch-panel .frame { aspect-ratio: auto; height: 100%; min-height: 320px; }
+  .beer-grid { grid-template-columns: repeat(2, 1fr); column-gap: 3.5rem; }
+  .food-grid { grid-template-columns: repeat(2, 1fr); }
+  .scene-list { grid-template-columns: repeat(2, 1fr); column-gap: 3.5rem; }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+  .reserve-grid { grid-template-columns: repeat(3, 1fr); column-gap: 3rem; }
+  .reserve-card { border-bottom: 0; }
 
-  .info-row { grid-template-columns: 8rem 1fr; gap: 1.5rem; padding: 1.3rem 0; }
-  .map-embed iframe { height: 320px; }
+  .lunch-panel { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center; }
+  .lunch-copy { padding-top: 0; }
+  .lunch-figure { aspect-ratio: 4 / 5; }
 
-  .footer-inner { grid-template-columns: 1fr auto; align-items: start; gap: 2.5rem; }
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+  .about-figure { margin-top: 0; aspect-ratio: 4 / 5; }
+
+  .info-row { grid-template-columns: 8.5rem 1fr; gap: 2rem; padding: 1.75rem 0; }
+  .map-embed iframe { height: 340px; }
+
+  .review-links { grid-template-columns: auto auto; gap: 2.5rem; justify-content: start; align-items: center; }
+  .review-links .review-note { grid-column: 1 / -1; margin-bottom: -.5rem; }
+
+  .footer-inner { grid-template-columns: 1fr auto; gap: 4rem; }
+  .footer-nav { grid-template-columns: repeat(2, auto); gap: .9rem 3rem; }
   .footer-copy { grid-column: 1 / -1; }
-  .site-footer { padding-bottom: clamp(2.5rem, 8vw, 4rem); }
+  .site-footer { padding-bottom: clamp(3.5rem, 10vw, 5rem); }
 
-  /* タブレット以上では固定バーを出さない */
   .sticky-cta { display: none; }
 }
 
 /* =========================================================
-   1280px 以上（デスクトップ）
+   1280px 以上
    ========================================================= */
 @media (min-width: 1280px) {
-  .concept-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
-  .points { margin-top: 0; grid-template-columns: 1fr; }
-
-  .beer-grid { grid-template-columns: repeat(4, 1fr); }
-  .food-grid { grid-template-columns: repeat(3, 1fr); }
-  .food-card-lg { grid-column: span 3; display: grid; grid-template-columns: 1.1fr 1fr; }
-  .food-card-lg .frame { aspect-ratio: auto; height: 100%; min-height: 340px; }
-  .food-card-lg .food-body { display: flex; flex-direction: column; justify-content: center; padding: 3rem; }
-  .food-card-lg h3 { font-size: 1.8rem; }
-  .food-card-lg .food-body p:last-child { font-size: .95rem; }
-
-  .scene-list { grid-template-columns: repeat(4, 1fr); }
-
-  .gallery { grid-template-columns: repeat(3, 1fr); }
+  .hero-figure { aspect-ratio: 16 / 9; }
+  .beer-grid   { grid-template-columns: repeat(4, 1fr); column-gap: 2.5rem; }
+  .beer-card   { border-bottom: 0; }
+  .food-grid   { grid-template-columns: repeat(3, 1fr); }
+  .scene-list  { grid-template-columns: repeat(4, 1fr); column-gap: 2.5rem; }
+  .scene-item  { border-bottom: 0; }
+  .gallery     { grid-template-columns: repeat(3, 1fr); }
   .gallery-wide { grid-column: span 2; }
-  .gallery-wide .frame { aspect-ratio: 18 / 7; }
+  .gallery-wide figure { aspect-ratio: 18 / 7; }
 
-  .budget { grid-template-columns: repeat(2, 1fr); max-width: 40rem; }
-
-  .info-grid { display: grid; grid-template-columns: 1.25fr 1fr; gap: 3.5rem; align-items: start; }
-  .info-side { margin-top: 0; position: sticky; top: calc(var(--header-h) + 1.5rem); }
+  .info-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 4.5rem; align-items: start; }
+  .info-side { margin-top: 0; position: sticky; top: calc(var(--header-h) + 2rem); }
 }
 </style>
 </head>
@@ -725,20 +671,15 @@ button { font: inherit; }
 
     <nav class="nav" id="nav" aria-label="メインナビゲーション">
       <ul class="nav-list">
-        <li><a href="#concept">コンセプト</a></li>
+        <li><a href="#about">当店について</a></li>
         <li><a href="#beer">クラフトビール</a></li>
         <li><a href="#food">お料理</a></li>
         <li><a href="#lunch">ランチ</a></li>
-        <li><a href="#interior">店内</a></li>
-        <li><a href="#party">ご宴会・貸切</a></li>
-        <li><a href="#info">店舗情報</a></li>
+        <li><a href="#interior">店内のご案内</a></li>
+        <li><a href="#hospitality">ご宴会・貸切</a></li>
+        <li><a href="#info">店舗のご案内</a></li>
       </ul>
-      <a class="btn btn-primary nav-cta" href="https://yoyaku.toreta.in/ikbbrewery/" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/><path d="m9 14.5 2 2 4-4"/>
-        </svg>
-        ネット予約
-      </a>
+      <a class="btn btn-primary nav-cta" href="https://yoyaku.toreta.in/ikbbrewery/" target="_blank" rel="noopener">ご予約</a>
     </nav>
 
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav" aria-label="メニューを開く">
@@ -751,275 +692,272 @@ button { font: inherit; }
 
   <!-- ===== HERO ===== -->
   <section class="hero" id="top">
-    <!-- ▼ 差し替え箇所：ヒーロー背景 images/hero.jpg（2000×1200 / 5:3）
-         装飾画像のため alt="" 。上に暗いオーバーレイが乗り白文字を担保します -->
-    <img class="hero-img" src="images/hero.jpg" alt="" width="2000" height="1200"
-         fetchpriority="high" decoding="async">
-
-    <div class="container hero-inner">
-      <p class="hero-eyebrow">池袋駅東口より徒歩2分</p>
-      <h1 class="hero-title">
-        <span class="hero-en">NIHONBASHI BREWERY.</span>
-        <span class="hero-ja">12種のクラフトビールと、<br>本格イタリアン。</span>
-      </h1>
-      <p class="hero-lead">
-        東京駅で人気を博す「ニホンバシブルワリー」のDNAを受け継ぎ、
-        木の温もりを活かした洗練された空間で、ペアリングの愉しみを。
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="https://yoyaku.toreta.in/ikbbrewery/" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/><path d="m9 14.5 2 2 4-4"/>
-          </svg>
-          ネットで予約する
-        </a>
-        <a class="btn btn-onDark" href="tel:08041167056">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          お電話でご予約
-        </a>
+    <div class="container">
+      <div class="hero-head">
+        <h1 class="hero-ja">
+          <span class="hero-en">Nihonbashi Brewery</span>
+          十二種のクラフトビールと、<br>本格イタリアン。
+        </h1>
+        <p class="hero-sub">池袋駅東口より徒歩二分</p>
       </div>
+
+      <!-- ▼ 差し替え箇所：ヒーロー写真 images/hero.jpg（2000×1200 / 5:3）
+           周囲に余白を確保するため、コンテナ幅の内側に配置しています -->
+      <figure class="hero-figure">
+        <img src="images/hero.jpg" alt="木のテーブルに供された生ハムビスマルク"
+             width="2000" height="1200" fetchpriority="high" decoding="async">
+      </figure>
+
       <ul class="hero-facts">
         <li><strong>12</strong><span>種のクラフトビール</span></li>
-        <li><strong>50</strong><span>席／最大50名貸切</span></li>
+        <li><strong>50</strong><span>席／最大50名様貸切</span></li>
         <li><strong>2</strong><span>分／池袋駅東口</span></li>
       </ul>
     </div>
   </section>
 
-  <!-- ===== CONCEPT ===== -->
-  <section class="section" id="concept">
+  <!-- ===== GREETING ===== -->
+  <section class="section" id="greeting">
+    <div class="narrow greeting">
+      <span class="ornament" aria-hidden="true"></span>
+      <h2 class="title title-lg">大切な方と過ごす、<br>ひとときのために。</h2>
+      <p class="lead">
+        記念日のお食事に、心を尽くしたおもてなしに、気のおけない方との一杯に。
+        厳選した十二種のクラフトビールと、その一杯に寄り添う本格イタリアンをご用意いたしました。
+        木の温もりを湛えた静かな店内で、ゆっくりとお過ごしくださいませ。
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section section-tint" id="about">
     <div class="container">
-      <div class="concept-grid">
-        <div class="concept-copy">
+      <div class="about-grid">
+        <div class="about-body">
           <div class="section-head">
-            <span class="label">Concept</span>
-            <h2 class="title">ビールに合う一皿だけを、選び抜いて。</h2>
+            <span class="label">About</span>
+            <h2 class="title">東京駅で愛された一杯を、<br>池袋のこの場所で。</h2>
           </div>
-          <p class="concept-lead">クラフトビールと本格イタリアンが楽しめるダイニングバー。</p>
           <p>
-            2025年2月、東京駅で人気の「NIHONBASHI BREWERY.T.S」が池袋に進出しました。
-            厳選した12種のクラフトビールを常時ご用意し、料理はすべて「ビールとの相性」を起点に組み立てています。
+            二〇二五年二月、東京駅で親しまれてまいりました「NIHONBASHI BREWERY.T.S」が、
+            池袋に新たな一軒を構えました。
           </p>
           <p>
-            照明を控えめにした落ち着きのある店内は、木の温もりを活かした洗練されたデザイン。
-            カウンター席とテーブル席を備え、おひとりの一杯から、大切な人との食事まで。
+            厳選した十二種のクラフトビールを常時ご用意し、お料理はすべて
+            「ビールとの相性」を起点に組み立てております。
+            照明を控えた落ち着きのある店内は、木の温もりを活かした設えです。
+            カウンター席とテーブル席をご用意し、おひとりでの一杯から、
+            大切な方とのお食事まで、静かにお迎えいたします。
           </p>
-          <p class="concept-sign">運営：株式会社ZOT</p>
+          <p class="about-sign">運営：株式会社ZOT</p>
         </div>
 
-        <ul class="points">
-          <li class="point">
-            <span class="point-num">01</span>
-            <h3>常時12種のラインナップ</h3>
-            <p>IPA、ペールエール、スタウトなど、個性豊かな樽を常時12種。飲み比べで自分の一杯を見つけてください。</p>
-          </li>
-          <li class="point">
-            <span class="point-num">02</span>
-            <h3>ペアリング前提のイタリアン</h3>
-            <p>イタリア産プロシュートの生ハムビスマルク、ウニクリームパスタ。ビールが進む設計です。</p>
-          </li>
-          <li class="point">
-            <span class="point-num">03</span>
-            <h3>池袋駅東口から徒歩2分</h3>
-            <p>仕事帰りの一杯にも、ショッピング後のディナーにも。ふらりと立ち寄れる距離感です。</p>
-          </li>
-        </ul>
+        <figure class="about-figure">
+          <img src="images/interior-2.jpg" alt="カウンター越しに見わたす店内の全景"
+               width="900" height="700" loading="lazy" decoding="async">
+        </figure>
       </div>
+
+      <ul class="points">
+        <li class="point">
+          <span class="point-num">I</span>
+          <h3>常時十二種のご用意</h3>
+          <p>IPA、ペールエール、スタウトなど、個性の異なる樽を常時十二種。飲み比べのうちに、お好みの一杯が見つかります。</p>
+        </li>
+        <li class="point">
+          <span class="point-num">II</span>
+          <h3>ビールに寄り添うお料理</h3>
+          <p>イタリア産プロシュートの生ハムビスマルク、ウニクリームパスタ。いずれもビールとの相性を考えて仕立てております。</p>
+        </li>
+        <li class="point">
+          <span class="point-num">III</span>
+          <h3>池袋駅東口より徒歩二分</h3>
+          <p>お勤め帰りの一杯にも、お買い物のあとのお食事にも。気軽にお立ち寄りいただける場所にございます。</p>
+        </li>
+      </ul>
     </div>
   </section>
 
   <!-- ===== BEER ===== -->
-  <section class="section section-tint" id="beer">
+  <section class="section" id="beer">
     <div class="container">
-      <div class="section-head">
+      <div class="section-head section-head-center">
         <span class="label">Craft Beer</span>
-        <h2 class="title">今日の12種から、今日の一杯を。</h2>
-        <p class="desc">
-          厳選したクラフトビールを常時12種類ご提供。ラインナップは樽の入れ替わりとともに変わります。
-          迷ったらスタッフにお声がけください。お料理に合わせてお選びします。
-        </p>
+        <h2 class="title">今日の十二種から、<br>今日の一杯を。</h2>
       </div>
 
       <!-- ▼ 差し替え箇所：images/beer-band.jpg（2000×760 / 約20:9） -->
-      <figure class="frame frame-band beer-band">
-        <img src="images/beer-band.jpg" alt="カウンターに並ぶ12基のビールサーバーのタップ"
+      <figure class="band">
+        <img src="images/beer-band.jpg" alt="カウンターに並ぶ十二基のビールサーバーのタップ"
              width="2000" height="760" loading="lazy" decoding="async">
       </figure>
 
       <ul class="beer-grid">
         <li class="beer-card">
-          <div class="beer-swatch" data-tone="ipa" aria-hidden="true"></div>
+          <div class="beer-rule" data-tone="ipa" aria-hidden="true"></div>
           <h3>IPA</h3>
           <p class="beer-style">India Pale Ale</p>
-          <p>ホップの香りと苦みがはっきりと立つ一杯。味の濃い料理や揚げ物と好相性。</p>
+          <p>ホップの香りと苦みがはっきりと立つ一杯。味の濃いお料理や揚げ物とよく合います。</p>
         </li>
         <li class="beer-card">
-          <div class="beer-swatch" data-tone="pale" aria-hidden="true"></div>
+          <div class="beer-rule" data-tone="pale" aria-hidden="true"></div>
           <h3>ペールエール</h3>
           <p class="beer-style">Pale Ale</p>
-          <p>華やかな香りとほどよい飲みごたえ。最初の一杯としてもおすすめです。</p>
+          <p>華やかな香りと、ほどよい飲みごたえ。はじめの一杯にもおすすめしております。</p>
         </li>
         <li class="beer-card">
-          <div class="beer-swatch" data-tone="stout" aria-hidden="true"></div>
+          <div class="beer-rule" data-tone="stout" aria-hidden="true"></div>
           <h3>スタウト</h3>
           <p class="beer-style">Stout</p>
-          <p>ローストの香ばしさと深いコク。食後のデザートと合わせても。</p>
+          <p>ローストの香ばしさと深いコク。食後のデザートと合わせてもお楽しみいただけます。</p>
         </li>
         <li class="beer-card">
-          <div class="beer-swatch" data-tone="more" aria-hidden="true"></div>
-          <h3>and more…</h3>
-          <p class="beer-style">全12種を常時オンタップ</p>
-          <p>上記のほかにも、季節や入荷に合わせた個性豊かな銘柄をご用意しています。</p>
+          <div class="beer-rule" data-tone="more" aria-hidden="true"></div>
+          <h3>そのほかの銘柄</h3>
+          <p class="beer-style">and more</p>
+          <p>季節や入荷に合わせ、個性豊かな銘柄をご用意しております。お好みをお聞かせください。</p>
         </li>
       </ul>
 
-      <p class="note">※ 提供銘柄は日によって異なります。最新のラインナップは店頭・SNSにてご確認ください。</p>
+      <p class="note">※ 提供銘柄は日によって異なります。最新のご案内は店頭またはSNSにてご確認くださいませ。</p>
     </div>
   </section>
 
   <!-- ===== FOOD ===== -->
-  <section class="section" id="food">
+  <section class="section section-tint" id="food">
     <div class="container">
-      <div class="section-head">
-        <span class="label">Food</span>
-        <h2 class="title">ビールが進む、本格イタリアン。</h2>
+      <div class="section-head section-head-center">
+        <span class="label">Menu</span>
+        <h2 class="title">定番のお料理</h2>
+        <p class="desc">ビールとともにお楽しみいただける、本格イタリアンをご用意しております。</p>
       </div>
 
       <!-- ▼ 差し替え箇所：料理写真はいずれも 4:3（1200×900 推奨） -->
       <div class="food-grid">
-        <article class="food-card food-card-lg">
-          <figure class="frame frame-4x3">
+        <article class="food-card">
+          <figure>
             <img src="images/prosciutto.jpg" alt="イタリア産プロシュートと卵黄をのせた生ハムビスマルク"
                  width="1200" height="900" loading="lazy" decoding="async">
           </figure>
           <div class="food-body">
             <p class="food-cat">Signature</p>
             <h3>生ハムビスマルク</h3>
-            <p>イタリア産プロシュートをたっぷりと。とろりと落とした卵黄をからめて、ピザ生地ごと。当店の看板です。</p>
+            <p>イタリア産プロシュートをたっぷりと。とろりと落とした卵黄をからめ、ピザ生地とともにお召し上がりください。当店の看板でございます。</p>
           </div>
         </article>
 
         <article class="food-card">
-          <figure class="frame frame-4x3">
+          <figure>
             <img src="images/pasta.jpg" alt="ウニと大葉をのせたウニクリームパスタ"
                  width="1200" height="900" loading="lazy" decoding="async">
           </figure>
           <div class="food-body">
             <p class="food-cat">Pasta</p>
             <h3>ウニクリームパスタ</h3>
-            <p>ウニを贅沢にのせた濃厚な一皿。クリーミーな余韻に、キレのあるビールを。</p>
+            <p>ウニを贅沢にあしらった濃厚な一皿。クリーミーな余韻に、キレのある一杯を合わせてお楽しみください。</p>
           </div>
         </article>
 
         <article class="food-card">
-          <figure class="frame frame-4x3">
+          <figure>
             <img src="images/genovese.jpg" alt="ホタテとエビを合わせたジェノベーゼのパスタにスダチを添えて"
                  width="1200" height="900" loading="lazy" decoding="async">
           </figure>
           <div class="food-body">
             <p class="food-cat">Pasta</p>
-            <h3>ジェノベーゼ × ホタテ × エビ × スダチ</h3>
-            <p>バジルの香りに魚介の甘み、仕上げにスダチの爽やかさ。軽やかなエールと合わせて。</p>
+            <h3>ジェノベーゼ<br>ホタテとエビ、スダチを添えて</h3>
+            <p>バジルの香りに魚介の甘み、仕上げにスダチの爽やかさを。軽やかなエールとともにどうぞ。</p>
           </div>
         </article>
 
         <article class="food-card">
-          <figure class="frame frame-4x3">
+          <figure>
             <img src="images/pudding.jpg" alt="アイスクリームを添えた自家製プリン"
                  width="1200" height="900" loading="lazy" decoding="async">
           </figure>
           <div class="food-body">
             <p class="food-cat">Dessert</p>
             <h3>自家製プリン</h3>
-            <p>濃厚な味わいの自家製。スタウトと合わせるのが、通の締めかたです。</p>
+            <p>濃厚な味わいの自家製プリン。スタウトと合わせて、静かに一日を締めくくっていただければ幸いです。</p>
           </div>
         </article>
       </div>
 
-      <p class="note">※ 掲載メニューは一例です。内容・価格は変更になる場合があります。</p>
+      <p class="note">※ 掲載のお品書きは一例です。内容・価格は変更になる場合がございます。</p>
     </div>
   </section>
 
   <!-- ===== LUNCH ===== -->
-  <section class="section section-tint" id="lunch">
+  <section class="section" id="lunch">
     <div class="container">
       <div class="lunch-panel">
+        <!-- ▼ 差し替え箇所：images/lunch.jpg（1200×1000 / 6:5） -->
+        <figure class="lunch-figure">
+          <img src="images/lunch.jpg" alt="ランチに添えられるスムージーとサラダ"
+               width="1200" height="1000" loading="lazy" decoding="async">
+        </figure>
+
         <div class="lunch-copy">
-          <span class="label">Lunch</span>
-          <h2 class="title">昼も、ちゃんとイタリアン。</h2>
+          <div class="section-head">
+            <span class="label">Lunch</span>
+            <h2 class="title">昼も、ゆっくりと。</h2>
+          </div>
           <p>
-            ランチタイムは11:00から。ピザ・パスタには、
-            <strong>おかわり自由のスムージーとサラダ</strong>が付きます。
+            ランチタイムは十一時より承っております。
+            ピザ・パスタには、おかわり自由のスムージーとサラダをお付けしております。
           </p>
           <p class="lunch-time">
             <span>月〜木</span> 11:00 – 15:00 <small>(14:00 L.O.)</small><br>
             <span>金・土</span> 11:00 – 23:00 <small>通し営業</small><br>
             <span>日・祝</span> 11:00 – 22:00 <small>通し営業</small>
           </p>
-          <p class="note">※ スムージー・サラダのサービスはランチタイムのみ。</p>
+          <p class="note">
+            ※ スムージー・サラダのご提供はランチタイムのみとなります。<br>
+            ※ ご予算の目安：ランチ ¥1,000〜／ディナー ¥3,000〜
+          </p>
         </div>
-        <!-- ▼ 差し替え箇所：images/lunch.jpg（1200×1000 / 6:5） -->
-        <figure class="frame frame-6x5">
-          <img src="images/lunch.jpg" alt="ランチに付くスムージーとサラダ"
-               width="1200" height="1000" loading="lazy" decoding="async">
-        </figure>
       </div>
-
-      <!-- ===== 予算目安 =====
-           要記入：下記の金額は仮の目安です。実際の客単価に差し替えてください。
-           変更する場合は <head> 内 JSON-LD の "priceRange" も合わせて更新してください。 -->
-      <dl class="budget">
-        <div class="budget-card">
-          <dt>ランチ</dt>
-          <dd>¥1,000<small> 〜</small></dd>
-        </div>
-        <div class="budget-card">
-          <dt>ディナー</dt>
-          <dd>¥3,000<small> 〜</small></dd>
-        </div>
-      </dl>
-      <p class="note">※ 金額は目安です。ご利用内容により異なります。</p>
     </div>
   </section>
 
   <!-- ===== SCENE ===== -->
   <section class="section" id="scene">
     <div class="container">
-      <div class="section-head">
+      <div class="section-head section-head-center">
         <span class="label">Scene</span>
-        <h2 class="title">どんな日にも、ちょうどいい。</h2>
+        <h2 class="title">ご利用のご案内</h2>
       </div>
       <ul class="scene-list">
         <li class="scene-item">
-          <svg class="scene-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <svg class="scene-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/>
           </svg>
-          <h3>デート</h3>
-          <p>照明を落とした落ち着きのある空間で、ゆっくりと。</p>
+          <h3>記念日のお食事に</h3>
+          <p>照明を控えた落ち着きのある空間で、静かにお過ごしいただけます。</p>
         </li>
         <li class="scene-item">
-          <svg class="scene-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <svg class="scene-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
             <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
           </svg>
-          <h3>女子会</h3>
-          <p>シェアしやすいイタリアンと、飲み比べの愉しさを。</p>
+          <h3>気のおけない集まりに</h3>
+          <p>取り分けやすいお料理と、飲み比べのお愉しみをご用意しております。</p>
         </li>
         <li class="scene-item">
-          <svg class="scene-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <svg class="scene-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M6 4h9a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z"/>
             <path d="M16 8h2.5a2.5 2.5 0 0 1 0 5H16"/><path d="M9 9v6M12.5 9v6"/>
           </svg>
-          <h3>仕事帰りの一杯</h3>
-          <p>カウンター席でさっと一杯。駅から徒歩2分。</p>
+          <h3>お勤め帰りの一杯に</h3>
+          <p>カウンター席にて、お一人でも気兼ねなくお過ごしいただけます。</p>
         </li>
         <li class="scene-item">
-          <svg class="scene-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <svg class="scene-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M5 8h14l1 12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1L5 8z"/>
             <path d="M8.5 11V6.5a3.5 3.5 0 0 1 7 0V11"/>
           </svg>
-          <h3>ショッピング後のディナー</h3>
-          <p>東口での買い物のあとに、そのまま流れて。</p>
+          <h3>お買い物のあとに</h3>
+          <p>東口でのお買い物の帰りに、そのままお立ち寄りいただけます。</p>
         </li>
       </ul>
     </div>
@@ -1028,42 +966,33 @@ button { font: inherit; }
   <!-- ===== INTERIOR ===== -->
   <section class="section section-tint" id="interior">
     <div class="container">
-      <div class="section-head">
+      <div class="section-head section-head-center">
         <span class="label">Interior</span>
-        <h2 class="title">木の温もりと、12のタップ。</h2>
-        <p class="desc">
-          カウンター席とテーブル席をあわせて50席。目の前に並ぶタップから、その日の一杯を。
-        </p>
+        <h2 class="title">木の温もりと、十二のタップ。</h2>
+        <p class="desc">カウンター席とテーブル席をあわせて五十席。目の前に並ぶタップから、その日の一杯をお選びいただけます。</p>
       </div>
 
       <!-- ▼ 差し替え箇所：店内写真は 9:7（900×700 推奨）。
-           .gallery-wide を付けた枠だけデスクトップで横長（18:7）になります。
-           画像を差し替えるときは figcaption の説明文も合わせて更新してください。 -->
+           .gallery-wide を付けた枠のみ、1280px 以上で横長（18:7）になります。
+           写真を差し替える際は figcaption の説明文も合わせてご更新ください。 -->
       <ul class="gallery">
         <li class="gallery-wide">
-          <figure class="frame frame-9x7">
+          <figure>
             <img src="images/interior-1.jpg" alt="カウンター席の目の前に並んだビールサーバー"
                  width="900" height="700" loading="lazy" decoding="async">
             <figcaption>カウンター席とタップ</figcaption>
           </figure>
         </li>
         <li>
-          <figure class="frame frame-9x7">
-            <img src="images/interior-2.jpg" alt="カウンター越しに見わたす店内の全景"
-                 width="900" height="700" loading="lazy" decoding="async">
-            <figcaption>店内の全景</figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure class="frame frame-9x7">
+          <figure>
             <img src="images/interior-3.jpg" alt="積み上げられたビールケースの壁"
                  width="900" height="700" loading="lazy" decoding="async">
             <figcaption>ビールケースの壁</figcaption>
           </figure>
         </li>
-        <li class="gallery-wide">
-          <figure class="frame frame-9x7">
-            <img src="images/interior-4.jpg" alt="木のテーブルに並んだ料理とドリンク"
+        <li>
+          <figure>
+            <img src="images/interior-4.jpg" alt="木のテーブルに並んだお料理とドリンク"
                  width="900" height="700" loading="lazy" decoding="async">
             <figcaption>テーブル席でのお食事</figcaption>
           </figure>
@@ -1072,107 +1001,57 @@ button { font: inherit; }
     </div>
   </section>
 
-  <!-- ===== VOICE / MEDIA ===== -->
-  <section class="section" id="voice">
-    <div class="container">
+  <!-- ===== HOSPITALITY（ご宴会・貸切） ===== -->
+  <section class="section section-accent" id="hospitality">
+    <div class="narrow hospitality">
+      <span class="ornament" aria-hidden="true"></span>
       <div class="section-head">
-        <span class="label">Voice</span>
-        <h2 class="title">お客様の声・メディア掲載</h2>
-        <p class="desc">
-          実際にご来店いただいた方の評価・口コミは、Google マップと食べログでご覧いただけます。
-        </p>
+        <span class="label">Hospitality</span>
+        <h2 class="title">最大五十名様まで、<br>貸切を承ります。</h2>
       </div>
-
-      <!-- 口コミ本文はこのページに転載していません。
-           転載する場合は Google Places API 経由での取得と出典表示が必要です
-           （Google マップからのコピー転載は利用規約および投稿者の著作権に抵触します）。
-           詳細は README.md の「口コミの扱い」を参照してください。 -->
-      <div class="voice-actions">
-        <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=%E3%83%8B%E3%83%9B%E3%83%B3%E3%83%90%E3%82%B7%E3%83%96%E3%83%AB%E3%83%AF%E3%83%AA%E3%83%BC+%E6%B1%A0%E8%A2%8B%E5%BA%97" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
-          </svg>
-          Google の口コミを見る
-        </a>
-        <a class="btn btn-outline" href="https://tabelog.com/tokyo/A1305/A130501/13305524/" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="m12 3.5 2.6 5.5 6 .85-4.35 4.3 1.05 6.1L12 17.4l-5.3 2.85 1.05-6.1L3.4 9.85l6-.85z"/>
-          </svg>
-          食べログの口コミを見る
-        </a>
-      </div>
-
-      <div class="media-strip">
-        <h3 class="media-title">メディア掲載</h3>
-        <!-- ▼ 要記入：掲載媒体のロゴ画像またはリンクに差し替えてください -->
-        <ul class="media-logos">
-          <li class="media-logo">媒体ロゴ 1</li>
-          <li class="media-logo">媒体ロゴ 2</li>
-          <li class="media-logo">媒体ロゴ 3</li>
-          <li class="media-logo">媒体ロゴ 4</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== PARTY ===== -->
-  <section class="section section-accent" id="party">
-    <div class="container party-inner">
-      <span class="label">Party</span>
-      <h2 class="title">最大50名様まで、貸切承ります。</h2>
-      <p class="party-lead">
-        歓送迎会、周年イベント、季節のパーティーに。
-        カウンター席・テーブル席を備えた50席の店内を、まるごとお使いいただけます。
+      <p class="lead">
+        歓送迎会や周年の集い、季節のお祝いに。
+        カウンター席・テーブル席を備えた五十席の店内を、まるごとお使いいただけます。
+        人数・ご予算・お日にちに合わせて設えをご相談いただけますので、
+        まずはお気軽にお申し付けくださいませ。
       </p>
-      <p class="party-note">人数・ご予算・お日にちに合わせてご相談ください。</p>
-      <a class="btn btn-primary" href="tel:08041167056" style="max-width:22rem">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        貸切のご相談
-      </a>
+      <p class="note">※ ご予約状況により、承れない日程もございます。あらかじめご了承ください。</p>
+
+      <div class="hospitality-actions">
+        <a class="btn btn-primary" href="tel:08041167056">お電話でご相談する</a>
+        <a class="btn btn-outline" href="https://yoyaku.toreta.in/ikbbrewery/" target="_blank" rel="noopener">ネットでご予約する</a>
+      </div>
     </div>
   </section>
 
   <!-- ===== RESERVE ===== -->
   <section class="section section-dark" id="reserve">
     <div class="container">
-      <div class="section-head">
+      <div class="section-head section-head-center">
         <span class="label">Reservation</span>
         <h2 class="title">ご予約・お問い合わせ</h2>
-        <p class="desc">お席のご予約、貸切のご相談はお気軽にどうぞ。</p>
+        <p class="desc">お席のご予約、貸切のご相談を承っております。</p>
       </div>
 
       <ul class="reserve-grid">
         <li class="reserve-card">
           <h3>お電話</h3>
           <a class="reserve-tel" href="tel:08041167056">080-4116-7056</a>
-          <p>営業時間内に承ります。当日のご予約もお電話が確実です。</p>
-          <a class="btn btn-primary" href="tel:08041167056">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            電話をかける
-          </a>
-        </li>
-
-        <li class="reserve-card">
-          <h3>Instagram DM</h3>
-          <p>最新のビールラインナップも公開中。DMからもお問い合わせいただけます。</p>
-          <a class="btn btn-onDark" href="https://www.instagram.com/ikbbrewery/" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/>
-            </svg>
-            @ikbbrewery を開く
-          </a>
+          <p>営業時間内に承ります。当日のご予約はお電話が確実でございます。</p>
+          <a class="btn btn-onDark" href="tel:08041167056">電話をかける</a>
         </li>
 
         <li class="reserve-card">
           <h3>ネット予約</h3>
-          <p>24時間受付。日付・人数を選んでその場でご予約いただけます。</p>
-          <a class="btn btn-primary" href="https://yoyaku.toreta.in/ikbbrewery/" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/><path d="m9 14.5 2 2 4-4"/>
-            </svg>
-            ネットで予約する
-          </a>
-          <p class="reserve-soon">※ 当日のご予約・変更・キャンセルはお電話にて承ります</p>
+          <p>二十四時間受付。日付とご人数をお選びいただき、その場でご予約いただけます。</p>
+          <a class="btn btn-onDark" href="https://yoyaku.toreta.in/ikbbrewery/" target="_blank" rel="noopener">予約ページを開く</a>
+          <p class="reserve-soon">※ 当日のご予約・ご変更・キャンセルはお電話にて承ります</p>
+        </li>
+
+        <li class="reserve-card">
+          <h3>Instagram</h3>
+          <p>最新のビールのご案内も掲載しております。DMからもお問い合わせいただけます。</p>
+          <a class="btn btn-onDark" href="https://www.instagram.com/ikbbrewery/" target="_blank" rel="noopener">@ikbbrewery</a>
         </li>
       </ul>
     </div>
@@ -1181,9 +1060,9 @@ button { font: inherit; }
   <!-- ===== INFO ===== -->
   <section class="section" id="info">
     <div class="container">
-      <div class="section-head">
+      <div class="section-head section-head-center">
         <span class="label">Information</span>
-        <h2 class="title">店舗情報・アクセス</h2>
+        <h2 class="title">店舗のご案内</h2>
       </div>
 
       <div class="info-grid">
@@ -1193,11 +1072,11 @@ button { font: inherit; }
             <dd>ニホンバシブルワリー 池袋店<br><span class="info-sub">NIHONBASHI BREWERY. 池袋店</span></dd>
           </div>
           <div class="info-row">
-            <dt>住所</dt>
+            <dt>所在地</dt>
             <dd>〒170-0013<br>東京都豊島区東池袋1-40-7<br>TC76東池袋一丁目ビル 2F</dd>
           </div>
           <div class="info-row">
-            <dt>電話</dt>
+            <dt>電話番号</dt>
             <dd><a href="tel:08041167056">080-4116-7056</a></dd>
           </div>
           <div class="info-row">
@@ -1213,13 +1092,14 @@ button { font: inherit; }
             <dd>不定休</dd>
           </div>
           <div class="info-row">
-            <dt>予算目安</dt>
-            <!-- 要記入：上の「予算目安」ブロックと同じ金額を入れてください -->
-            <dd>ランチ ¥1,000〜／ディナー ¥3,000〜<br><span class="info-sub">※ 目安金額です</span></dd>
+            <dt>ご予算の目安</dt>
+            <!-- 要記入：仮の数値です。実際の客単価に差し替えのうえ、
+                 Lunch セクションの注記と <head> 内 JSON-LD の priceRange も合わせてご更新ください -->
+            <dd>ランチ ¥1,000〜／ディナー ¥3,000〜<br><span class="info-sub">※ 目安の金額でございます</span></dd>
           </div>
           <div class="info-row">
             <dt>席数</dt>
-            <dd>50席（カウンター席・テーブル席）<br><span class="info-sub">最大50名様まで貸切可</span></dd>
+            <dd>50席（カウンター席・テーブル席）<br><span class="info-sub">最大50名様まで貸切を承ります</span></dd>
           </div>
           <div class="info-row">
             <dt>アクセス</dt>
@@ -1229,7 +1109,7 @@ button { font: inherit; }
             <dt>ご予約</dt>
             <dd>
               <a href="https://yoyaku.toreta.in/ikbbrewery/" target="_blank" rel="noopener">ネット予約（24時間受付）</a>／お電話<br>
-              <span class="info-sub">※ 当日のご予約・変更・キャンセルはお電話にて</span>
+              <span class="info-sub">※ 当日のご予約・ご変更・キャンセルはお電話にて</span>
             </dd>
           </div>
         </dl>
@@ -1243,17 +1123,16 @@ button { font: inherit; }
               referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B1%8A%E5%B3%B6%E5%8C%BA%E6%9D%B1%E6%B1%A0%E8%A2%8B1-40-7+TC76%E6%9D%B1%E6%B1%A0%E8%A2%8B%E4%B8%80%E4%B8%81%E7%9B%AE%E3%83%93%E3%83%AB" target="_blank" rel="noopener">Google マップで開く</a>
-          <a class="btn btn-primary" href="https://yoyaku.toreta.in/ikbbrewery/" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/><path d="m9 14.5 2 2 4-4"/>
-            </svg>
-            ネットで予約する
-          </a>
-          <a class="btn btn-outline" href="tel:08041167056">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            電話で予約する
-          </a>
+          <a class="btn btn-primary" href="https://yoyaku.toreta.in/ikbbrewery/" target="_blank" rel="noopener">ネットでご予約する</a>
         </div>
+      </div>
+
+      <!-- 口コミ本文は転載しておりません（各サービスの規約および投稿者の著作権のため）。
+           掲載する場合の適法な方法は README.md「口コミの扱い」をご参照ください。 -->
+      <div class="review-links">
+        <p class="review-note">お客様からの評価は、各サイトにてご覧いただけます。</p>
+        <a class="btn btn-quiet" href="https://www.google.com/maps/search/?api=1&query=%E3%83%8B%E3%83%9B%E3%83%B3%E3%83%90%E3%82%B7%E3%83%96%E3%83%AB%E3%83%AF%E3%83%AA%E3%83%BC+%E6%B1%A0%E8%A2%8B%E5%BA%97" target="_blank" rel="noopener">Google マップの口コミを見る</a>
+        <a class="btn btn-quiet" href="https://tabelog.com/tokyo/A1305/A130501/13305524/" target="_blank" rel="noopener">食べログの口コミを見る</a>
       </div>
     </div>
   </section>
@@ -1265,17 +1144,20 @@ button { font: inherit; }
     <div class="footer-brand">
       <p class="brand-en">NIHONBASHI BREWERY.</p>
       <p class="brand-ja">ニホンバシブルワリー 池袋店</p>
-      <p class="footer-addr">東京都豊島区東池袋1-40-7 TC76東池袋一丁目ビル 2F<br>TEL 080-4116-7056</p>
+      <p class="footer-addr">
+        東京都豊島区東池袋1-40-7 TC76東池袋一丁目ビル 2F<br>
+        TEL 080-4116-7056
+      </p>
     </div>
     <nav class="footer-nav" aria-label="フッターナビゲーション">
-      <a href="#concept">コンセプト</a>
+      <a href="#about">当店について</a>
       <a href="#beer">クラフトビール</a>
       <a href="#food">お料理</a>
       <a href="#lunch">ランチ</a>
-      <a href="#interior">店内</a>
-      <a href="#party">ご宴会・貸切</a>
+      <a href="#interior">店内のご案内</a>
+      <a href="#hospitality">ご宴会・貸切</a>
       <a href="#reserve">ご予約</a>
-      <a href="#info">店舗情報</a>
+      <a href="#info">店舗のご案内</a>
     </nav>
     <p class="footer-copy">運営：株式会社ZOT</p>
   </div>
@@ -1283,16 +1165,8 @@ button { font: inherit; }
 
 <!-- スマートフォン用 固定CTA -->
 <div class="sticky-cta" id="stickyCta">
-  <a class="btn btn-primary" href="tel:08041167056">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-    電話で予約
-  </a>
-  <a class="btn btn-outline" href="https://yoyaku.toreta.in/ikbbrewery/" target="_blank" rel="noopener">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/><path d="m9 14.5 2 2 4-4"/>
-    </svg>
-    ネット予約
-  </a>
+  <a class="btn btn-primary" href="tel:08041167056">お電話でご予約</a>
+  <a class="btn btn-outline" href="https://yoyaku.toreta.in/ikbbrewery/" target="_blank" rel="noopener">ネット予約</a>
 </div>
 
 <script>
@@ -1349,35 +1223,35 @@ button { font: inherit; }
 
   var supportsIO = 'IntersectionObserver' in window;
 
-  /* ---------- 固定CTA：ヒーローを過ぎたら出現／フッターで収まる ---------- */
+  /* ---------- 固定CTA：ヒーローを過ぎたら現れ、フッターで収まる ---------- */
   if (supportsIO && stickyCta && hero && footer) {
     var pastHero = false, atFooter = false;
     function syncCta() { stickyCta.classList.toggle('is-visible', pastHero && !atFooter); }
 
     new IntersectionObserver(function (entries) {
-      pastHero = !entries[0].isIntersecting;
-      syncCta();
+      pastHero = !entries[0].isIntersecting; syncCta();
     }, { threshold: 0 }).observe(hero);
 
     new IntersectionObserver(function (entries) {
-      atFooter = entries[0].isIntersecting;
-      syncCta();
+      atFooter = entries[0].isIntersecting; syncCta();
     }, { threshold: 0 }).observe(footer);
   }
 
-  /* ---------- スクロール連動のフェードイン ---------- */
+  /* ---------- ゆっくりとしたフェードイン ---------- */
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (!supportsIO || reduceMotion) return;   // 何もしない＝最初から表示された状態
 
   var targets = document.querySelectorAll(
-    '.section-head, .concept-copy > p, .point, .beer-band, .beer-card, .food-card, ' +
-    '.lunch-panel, .budget-card, .scene-item, .gallery > li, .voice-actions, ' +
-    '.media-strip, .party-inner > *, .reserve-card, .info-table, .info-side'
+    '.hero-head, .hero-figure, .hero-facts, .greeting > *, .section-head, ' +
+    '.about-body > p, .about-figure, .point, .band, .beer-card, .food-card, ' +
+    '.lunch-figure, .lunch-copy > *, .scene-item, .gallery > li, ' +
+    '.hospitality .lead, .hospitality-actions, .reserve-card, ' +
+    '.info-table, .info-side, .review-links'
   );
 
   Array.prototype.forEach.call(targets, function (el, i) {
     el.classList.add('reveal');
-    el.style.transitionDelay = (i % 3) * 80 + 'ms';
+    el.style.transitionDelay = (i % 3) * 120 + 'ms';
   });
 
   var io = new IntersectionObserver(function (entries) {
@@ -1387,7 +1261,7 @@ button { font: inherit; }
         io.unobserve(entry.target);
       }
     });
-  }, { rootMargin: '0px 0px -10% 0px', threshold: 0.05 });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.04 });
 
   Array.prototype.forEach.call(targets, function (el) { io.observe(el); });
 })();
