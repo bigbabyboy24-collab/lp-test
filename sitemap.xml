@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  採用関連の4ページ（recruit / recruit-hall / recruit-kitchen / recruit-staff）は、
+  労働条件が暫定値のあいだ各ページに noindex を付けているため、あえて未収録です。
+  実際の条件へ差し替えて noindex を外したら、下のコメントを外してください。
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://bigbabyboy24-collab.github.io/lp-test/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!--
+  <url>
+    <loc>https://bigbabyboy24-collab.github.io/lp-test/recruit.html</loc>
+    <changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bigbabyboy24-collab.github.io/lp-test/recruit-hall.html</loc>
+    <changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bigbabyboy24-collab.github.io/lp-test/recruit-kitchen.html</loc>
+    <changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bigbabyboy24-collab.github.io/lp-test/recruit-staff.html</loc>
+    <changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  -->
+</urlset>

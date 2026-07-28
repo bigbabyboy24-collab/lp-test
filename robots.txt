@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# 求人3ページは労働条件が暫定値のため、各ページの <meta name="robots" content="noindex">
+# でインデックスを止めています。実際の条件に差し替えたらそのメタタグを削除してください。
+# （ここでは Disallow しません。クロールを止めると noindex 自体が読まれないためです）
+
+Sitemap: https://bigbabyboy24-collab.github.io/lp-test/sitemap.xml

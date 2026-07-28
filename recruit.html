@@ -7,15 +7,19 @@
 <!-- ===========================================================
      ！！ 公開前に必ずお読みください ！！
 
-     このページの「募集要項」は、すべて未記入のひな形です。
-     給与・勤務時間・待遇などの労働条件は、店舗の実際の条件に
-     置き換えてから公開してください。
+     労働条件は職種別の3ページ（recruit-hall / recruit-kitchen /
+     recruit-staff）に掲載しており、いずれも池袋周辺の相場に基づく
+     暫定値です。実際の条件に置き換えてから公開してください。
 
      職業安定法により、求人票に実際と異なる労働条件を記載することは
      禁じられています（虚偽の条件提示は罰則の対象です）。
 
-     未記入のまま検索結果に出ないよう、下の noindex を入れています。
-     内容を確定させたら、次の robots メタタグの行を削除してください。
+     暫定値のまま検索結果に出ないよう、採用関連の4ページすべてに
+     noindex を入れ、sitemap.xml からも除外しています。
+     条件を確定させたら、次の3点をまとめて対応してください。
+       1. 各ページの robots メタタグの行を削除
+       2. sitemap.xml のコメントアウトを解除
+       3. 職種別ページの JobPosting の値をページ表示と揃える
      =========================================================== -->
 <meta name="robots" content="noindex, nofollow">
 
@@ -42,43 +46,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap">
 
-<!-- ===== 構造化データ（JobPosting）のひな形 =====
-     募集要項が確定したら、下のコメントを外して各値を埋めてください。
-     Google しごと検索に掲載される可能性があります。
-     ただし虚偽・未確定の値のまま公開してはいけません。
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "JobPosting",
-  "title": "＿＿＿＿（例：ホールスタッフ）",
-  "description": "＿＿＿＿（業務内容を記載）",
-  "datePosted": "YYYY-MM-DD",
-  "validThrough": "YYYY-MM-DD",
-  "employmentType": "PART_TIME",
-  "hiringOrganization": {
-    "@type": "Organization",
-    "name": "ニホンバシブルワリー 池袋店"
-  },
-  "jobLocation": {
-    "@type": "Place",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "東池袋1-40-7 TC76東池袋一丁目ビル 2F",
-      "addressLocality": "豊島区",
-      "addressRegion": "東京都",
-      "postalCode": "170-0013",
-      "addressCountry": "JP"
-    }
-  },
-  "baseSalary": {
-    "@type": "MonetaryAmount",
-    "currency": "JPY",
-    "value": { "@type": "QuantitativeValue", "value": 0, "unitText": "HOUR" }
-  }
-}
-</script>
--->
 
 <style>
 /* =========================================================
