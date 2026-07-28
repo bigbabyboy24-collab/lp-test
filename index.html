@@ -508,14 +508,8 @@ button { font: inherit; }
 /* =========================================================
    Voice / Media（掲載枠）
    ========================================================= */
-.voice-grid { display: grid; gap: 1rem; }
-.voice-card {
-  padding: 1.6rem 1.5rem;
-  background: var(--surface); border: 1px solid var(--line); border-radius: var(--r);
-}
-.voice-quote { font-family: var(--serif); font-size: 1.5rem; line-height: 1; color: var(--line); }
-.voice-card blockquote { margin-top: .5rem; font-size: .9rem; line-height: 1.9; color: var(--ink-2); }
-.voice-meta { margin-top: 1rem; font-size: .78rem; letter-spacing: .06em; color: var(--ink-3); }
+.voice-actions { margin-top: .5rem; }
+.voice-actions .btn { max-width: 22rem; }
 
 .media-strip { margin-top: 2rem; }
 .media-title { margin-bottom: 1rem; font-size: .82rem; letter-spacing: .12em; color: var(--ink-3); }
@@ -652,7 +646,6 @@ button { font: inherit; }
   .food-grid  { grid-template-columns: repeat(2, 1fr); }
   .scene-list { grid-template-columns: repeat(2, 1fr); }
   .gallery    { grid-template-columns: repeat(2, 1fr); }
-  .voice-grid { grid-template-columns: repeat(3, 1fr); }
   .media-logos { grid-template-columns: repeat(4, 1fr); }
   .budget { grid-template-columns: repeat(2, 1fr); }
   .reserve-grid { grid-template-columns: repeat(3, 1fr); }
@@ -1058,28 +1051,23 @@ button { font: inherit; }
       <div class="section-head">
         <span class="label">Voice</span>
         <h2 class="title">お客様の声・メディア掲載</h2>
+        <p class="desc">
+          実際にご来店いただいた方の評価・口コミは、Google マップでご覧いただけます。
+        </p>
       </div>
 
-      <!-- ▼ 要記入：以下は掲載枠です。実際にいただいた口コミに差し替えてください。
-           口コミを掲載する際は、投稿者への許諾と出典（媒体名）の明記をおすすめします。
-           架空のレビューを載せると景品表示法（ステルスマーケティング規制）に抵触します。 -->
-      <ul class="voice-grid">
-        <li class="voice-card">
-          <p class="voice-quote" aria-hidden="true">“</p>
-          <blockquote>ここに実際にいただいた口コミを掲載してください。</blockquote>
-          <p class="voice-meta">出典・投稿者名（※ 掲載準備中）</p>
-        </li>
-        <li class="voice-card">
-          <p class="voice-quote" aria-hidden="true">“</p>
-          <blockquote>ここに実際にいただいた口コミを掲載してください。</blockquote>
-          <p class="voice-meta">出典・投稿者名（※ 掲載準備中）</p>
-        </li>
-        <li class="voice-card">
-          <p class="voice-quote" aria-hidden="true">“</p>
-          <blockquote>ここに実際にいただいた口コミを掲載してください。</blockquote>
-          <p class="voice-meta">出典・投稿者名（※ 掲載準備中）</p>
-        </li>
-      </ul>
+      <!-- 口コミ本文はこのページに転載していません。
+           転載する場合は Google Places API 経由での取得と出典表示が必要です
+           （Google マップからのコピー転載は利用規約および投稿者の著作権に抵触します）。
+           詳細は README.md の「口コミの扱い」を参照してください。 -->
+      <div class="voice-actions">
+        <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=%E3%83%8B%E3%83%9B%E3%83%B3%E3%83%90%E3%82%B7%E3%83%96%E3%83%AB%E3%83%AF%E3%83%AA%E3%83%BC+%E6%B1%A0%E8%A2%8B%E5%BA%97" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+          Google の口コミを見る
+        </a>
+      </div>
 
       <div class="media-strip">
         <h3 class="media-title">メディア掲載</h3>
@@ -1328,7 +1316,7 @@ button { font: inherit; }
 
   var targets = document.querySelectorAll(
     '.section-head, .concept-copy > p, .point, .beer-band, .beer-card, .food-card, ' +
-    '.lunch-panel, .budget-card, .scene-item, .gallery > li, .voice-card, ' +
+    '.lunch-panel, .budget-card, .scene-item, .gallery > li, .voice-actions, ' +
     '.media-strip, .party-inner > *, .reserve-card, .info-table, .info-side'
   );
 
