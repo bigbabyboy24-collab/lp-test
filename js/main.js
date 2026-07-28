@@ -74,8 +74,8 @@
 
   /* ---------- スクロール表示アニメーション ---------- */
   var targets = document.querySelectorAll(
-    '.section-head, .concept-copy, .concept-points li, .beer-card, ' +
-    '.food-card, .lunch-panel, .scene-list li, .party-inner > *, ' +
+    '.section-head, .concept-copy, .concept-points li, .beer-band, .beer-card, ' +
+    '.food-card, .lunch-panel, .scene-list li, .gallery-item, .party-inner > *, ' +
     '.info-table, .info-side'
   );
 
