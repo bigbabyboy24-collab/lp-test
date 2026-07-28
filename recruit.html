@@ -272,6 +272,29 @@ button { font: inherit; }
   text-transform: uppercase; color: var(--bronze);
 }
 .job-card p { font-size: .86rem; }
+a.job-card { display: block; transition: border-color .45s var(--ease); }
+a.job-card:hover { border-color: var(--bronze); }
+.job-more {
+  display: inline-block; margin-top: 1.15rem; padding-bottom: .3rem;
+  border-bottom: 1px solid var(--line);
+  font-size: .8rem; letter-spacing: .12em; color: var(--bronze);
+}
+a.job-card:hover .job-more { border-bottom-color: var(--bronze); }
+
+/* 募集要項セクションの職種リンク */
+.job-links { display: grid; gap: .7rem; }
+.job-links a {
+  display: grid; gap: .2rem;
+  padding: 1.35rem 1.5rem;
+  background: var(--white); border: 1px solid var(--line);
+  transition: border-color .45s var(--ease);
+}
+.job-links a:hover { border-color: var(--bronze); }
+.job-links strong {
+  font-family: var(--mincho); font-size: 1rem; font-weight: 500;
+  letter-spacing: .1em; color: var(--ink);
+}
+.job-links span { font-size: .8rem; color: var(--ink-3); }
 
 /* 未確定であることが一目でわかる書式 */
 .tbd {
@@ -514,20 +537,29 @@ button { font: inherit; }
       </div>
 
       <ul class="job-list">
-        <li class="job-card">
-          <h3>ホールスタッフ</h3>
-          <p class="job-type">Hall</p>
-          <p>ご案内、ご注文の承り、ドリンクのご提供、お会計など。ビールの注ぎ方は入店後にお教えいたします。</p>
+        <li>
+          <a class="job-card" href="recruit-hall.html">
+            <h3>ホールスタッフ</h3>
+            <p class="job-type">Hall</p>
+            <p>ご案内、ご注文の承り、ドリンクのご提供、お会計など。ビールの注ぎ方は入店後にお教えいたします。</p>
+            <span class="job-more">募集要項を見る</span>
+          </a>
         </li>
-        <li class="job-card">
-          <h3>キッチンスタッフ</h3>
-          <p class="job-type">Kitchen</p>
-          <p>ピッツァ・パスタの調理補助、仕込み、盛り付けなど。調理経験の有無は問いません。</p>
+        <li>
+          <a class="job-card" href="recruit-kitchen.html">
+            <h3>キッチンスタッフ</h3>
+            <p class="job-type">Kitchen</p>
+            <p>ピッツァ・パスタの調理補助、仕込み、盛り付けなど。調理経験の有無は問いません。</p>
+            <span class="job-more">募集要項を見る</span>
+          </a>
         </li>
-        <li class="job-card">
-          <h3>社員</h3>
-          <p class="job-type">Full-time</p>
-          <p>ホール・キッチン業務に加え、シフトの管理や発注などの店舗運営に携わっていただきます。</p>
+        <li>
+          <a class="job-card" href="recruit-staff.html">
+            <h3>社員</h3>
+            <p class="job-type">Full-time</p>
+            <p>ホール・キッチン業務に加え、シフトの管理や発注などの店舗運営に携わっていただきます。</p>
+            <span class="job-more">募集要項を見る</span>
+          </a>
         </li>
       </ul>
 
@@ -541,46 +573,23 @@ button { font: inherit; }
       <div class="section-head section-head-center">
         <span class="label">Requirements</span>
         <h2 class="title">募集要項</h2>
-        <p class="desc">下記の労働条件は、公開前に実際の条件へご記入ください。</p>
+        <p class="desc">
+          給与・勤務時間などの詳しい条件は、職種ごとのページに掲載しております。
+        </p>
       </div>
 
       <div class="req-access-grid">
-        <!-- ▼ 要記入：ここから下の「未記入」はすべて実際の条件に差し替えてください。
-             職業安定法により、実際と異なる労働条件の記載は禁じられています。 -->
-        <dl class="req-table">
-          <div class="req-row">
-            <dt>雇用形態</dt>
-            <dd><span class="tbd">未記入</span>（例：アルバイト・パート／正社員）</dd>
-          </div>
-          <div class="req-row">
-            <dt>給与</dt>
-            <dd><span class="tbd">未記入</span><br>
-              <span style="font-size:.8rem;color:var(--ink-3)">時給・月給、深夜割増、試用期間中の条件を明記してください</span></dd>
-          </div>
-          <div class="req-row">
-            <dt>勤務時間</dt>
-            <dd><span class="tbd">未記入</span><br>
-              <span style="font-size:.8rem;color:var(--ink-3)">シフト制の場合は最低勤務日数・時間帯もご記載ください</span></dd>
-          </div>
-          <div class="req-row">
-            <dt>休憩・休日</dt>
-            <dd><span class="tbd">未記入</span></dd>
-          </div>
-          <div class="req-row">
-            <dt>待遇・福利厚生</dt>
-            <dd><span class="tbd">未記入</span><br>
-              <span style="font-size:.8rem;color:var(--ink-3)">交通費、まかない、社会保険、昇給の有無など</span></dd>
-          </div>
-          <div class="req-row">
-            <dt>応募資格</dt>
-            <dd><span class="tbd">未記入</span><br>
-              <span style="font-size:.8rem;color:var(--ink-3)">年齢・性別による制限は原則として記載できません</span></dd>
-          </div>
-          <div class="req-row">
-            <dt>選考方法</dt>
-            <dd><span class="tbd">未記入</span>（例：面接一回）</dd>
-          </div>
-        </dl>
+        <div>
+          <ul class="job-links">
+            <li><a href="recruit-hall.html"><strong>ホールスタッフ</strong><span>アルバイト・パート</span></a></li>
+            <li><a href="recruit-kitchen.html"><strong>キッチンスタッフ</strong><span>アルバイト・パート</span></a></li>
+            <li><a href="recruit-staff.html"><strong>社員（店舗スタッフ）</strong><span>正社員</span></a></li>
+          </ul>
+          <p class="note">
+            ※ 各ページに記載の労働条件は、池袋周辺の飲食店の相場をもとにした暫定値です。
+            公開前に実際の条件へご修正ください。
+          </p>
+        </div>
 
         <dl class="access-table">
           <div class="access-row">
@@ -686,8 +695,9 @@ button { font: inherit; }
       <a href="index.html#food">お料理</a>
       <a href="index.html#interior">店内のご案内</a>
       <a href="index.html#info">店舗のご案内</a>
-      <a href="#jobs">募集職種</a>
-      <a href="#requirements">募集要項</a>
+      <a href="recruit-hall.html">ホールスタッフ</a>
+      <a href="recruit-kitchen.html">キッチンスタッフ</a>
+      <a href="recruit-staff.html">社員</a>
       <a href="#flow">ご応募の流れ</a>
       <a href="#apply">ご応募・お問い合わせ</a>
     </nav>
